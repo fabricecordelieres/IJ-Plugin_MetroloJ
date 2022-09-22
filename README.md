@@ -82,7 +82,7 @@ Clean the coverslip and the slide using ethanol;
 Dilute the polylysine stock solution to 1/5$^{th}$;
 
 Poor a sufficient amount of the diluted polylysine solution onto the
-coverslip surface (typically, 200$\mu$l for a 24x24mm coverslip) and
+coverslip surface (typically, 200µl for a 24x24mm coverslip) and
 leave to coat for 15-30 minutes. The solution hardly covers the full
 surface, so don't hesitate to use the pipet's tip to force the
 polylysine into the coverslip's corners;
@@ -142,39 +142,28 @@ microscope.
 
 ### What does it do ?
 
-The plugin will generate a maximum intensity projection of the stack
-along the z axis. The (x, y) coordinates of the maximum intensity pixel
-(MIPix) are then collected. A XZ cross-section is generated, along a
-line passing through the previously determined 2D MIPix. From this
-image, the z coordinate of the MIPix is defined.
+The plugin will generate a maximum intensity projection of the stack along the z axis. The (x, y) coordinates of the maximum intensity pixel (MIPix) are then collected. A XZ cross-section is generated, along a line passing through the previously determined 2D MIPix. From this image, the z coordinate of the MIPix is defined.
 
-The z slice is set to the z MIPix coordinate. The x profile and y
-profile are collected along the line passing through the MIPix. The z
-profile is collected on the XZ view, along the line passing through the
-MIPix.
+The z slice is set to the z MIPix coordinate. The x profile and y profile are collected along the line passing through the MIPix. The z profile is collected on the XZ view, along the line passing through the MIPix.
 
-All three profiles are fitted to a Gaussian, using the following
-equation and ImageJ's built-in curve fitting function:
-$$y = a + (b-a)*e^{\frac{-(x-c)^{2}}{2*d^{2}}}
-            \label{eqn:gpr-gaussian}$$
+All three profiles are fitted to a Gaussian, using the following equation and ImageJ's built-in curve fitting function:
 
-The resolution i.e. the full-width at half-maximum (FWHM) is calculated
-as follows for each profile, based on the parameters retrieved from the
-fitting: $$FWHM=2d\sqrt{2ln(2)}
-        \label{eqn:gpr-FWHM}$$
+$$y = a + (b-a)*e^{\frac{-(x-c)^{2}}{2*d^{2}}}$$
 
-The theoretical resolutions are calculated as follows, depending on the
-microscope's type: $$\begin{aligned}
-            xy_{resol, wide-field}=\frac{0.61*\lambda_{emission}}{NA}
-            \label{eqn:gpr-xyWF}\\
-            z_{resol, wide-field}=\frac{2*\lambda_{emission}}{NA^2}
-            \label{eqn:gpr-zWF}\\
-            xy_{resol, confocal}=\frac{0.4*\lambda_{emission}}{NA}
-            \label{eqn:gpr-xyConf}\\
-            z_{resol, confocal}=\frac{1.4*\lambda_{emission}}{NA^2}
-            \label{eqn:gpr-zConf}
-        
-\end{aligned}$$
+The resolution i.e. the full-width at half-maximum (FWHM) is calculated as follows for each profile, based on the parameters retrieved from the fitting:
+
+$$FWHM=2d\sqrt{2ln(2)}$$
+
+The theoretical resolutions are calculated as follows, depending on the microscope's type:
+
+$$xy_{resol, wide-field}=\frac{0.61*\lambda_{emission}}{NA}$$
+
+$$z_{resol, wide-field}=\frac{2*\lambda_{emission}}{NA^2}$$
+
+$$xy_{resol, confocal}=\frac{0.4*\lambda_{emission}}{NA}$$
+
+$$z_{resol, confocal}=\frac{1.4*\lambda_{emission}}{NA^2}$$
+
 
 
 ### How to use it ?
@@ -261,7 +250,6 @@ user in the "Sample infos" section of the interface;
 
 ***Comments (optional)***: contains the informations entered by the user
 in the "Comments" section of the interface;
-:::
 
 ## Known issues (to date\...) and workarounds (if any\...)
 
@@ -283,7 +271,7 @@ to a coverslip.*
 ***Fluorescent beads:*** their outer diameter should be well above the
 resolution of the system to test. Two types of beads might be used:
 
-Uniformly labelled beads. ex: Molecular Probes' [4$\mu$m TetraSpeck,
+Uniformly labelled beads. ex: Molecular Probes' [4µm TetraSpeck,
 Ref. T-7283](http://probes.invitrogen.com/media/pis/mp07279.pdf).
 However, their diameter is a bit small for low NA objectives\...
 
@@ -318,7 +306,7 @@ Clean the coverslip and the slide using ethanol;
 Dilute the polylysine stock solution to 1/5$^{th}$;
 
 Poor a sufficient amount of the diluted polylysine solution onto the
-coverslip surface (typically, 200$\mu$l for a 24x24mm coverslip) and
+coverslip surface (typically, 200µl for a 24x24mm coverslip) and
 leave to coat for 15-30 minutes. The solution hardly covers the full
 surface, so don't hesitate to use the pipet's tip to force the
 polylysine into the coverslip's corners;
@@ -330,7 +318,7 @@ Use a vortex to mix the beads' stock suspension;
 
 Dilute the beads suspension in water. Here are some tips and facts:
 
-Typically, 200$\mu$l for a 24x24mm coverslip will be requiered;
+Typically, 200µl for a 24x24mm coverslip will be requiered;
 
 In general, the beads should not be diluted much from 1/10 to 1/100;
 
@@ -425,12 +413,12 @@ occurs (see fig.
 [\[fig:gcoar-dist\]](#fig:gcoar-dist)C) or not (see fig.
 [\[fig:gcoar-dist\]](#fig:gcoar-dist)}B).
 
-$$\begin{aligned}
-        \Phi=\arccos\frac{x_{B}-x_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2}}\label{eqn:gcoar-phi}\\
-        \Theta=\arccos\frac{z_{B}-z_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2+(z_{B}-z_{A})^2}}\label{eqn:gcoar-theta}\\
-        r_{ref}=\sqrt{(res^\circ_{x}\times\sin\Theta\times\cos\Phi )^2+(res^\circ_{y}\times\sin\Theta\times\sin\Phi)^2+(res^\circ_{z}\times\cos\Theta)^2}\label{eqn:gcoar-refDist}
-    
-\end{aligned}$$
+
+        $$\Phi=\arccos\frac{x_{B}-x_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2}}$$
+        
+        $$\Theta=\arccos\frac{z_{B}-z_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2+(z_{B}-z_{A})^2}}$$
+        
+        $$r_{ref}=\sqrt{(res^\circ_{x}\times\sin\Theta\times\cos\Phi )^2+(res^\circ_{y}\times\sin\Theta\times\sin\Phi)^2+(res^\circ_{z}\times\cos\Theta)^2}$$
 
 ### How to use it ?
 
@@ -573,22 +561,22 @@ an average intensity projection of the image along the y axis.
 
 The resulting 1D intensity profile is then fitted to a Gaussian, using
 the following equation and ImageJ's built-in curve fitting function:
-$$y = a + (b-a)*e^{\frac{-(x-c)^{2}}{2*d^{2}}}
-            \label{eqn:garr-gaussian}$$
+
+$$y = a + (b-a)*e^{\frac{-(x-c)^{2}}{2*d^{2}}}$$
 
 The axial resolution i.e. the full-width at half-maximum (FWHM) is
 calculated as follows, based on the parameters retrieved from the
-fitting: $$FWHM=2d\sqrt{2ln(2)}
-        \label{eqn:garr-FWHM}$$
+fitting: 
+
+$$FWHM=2d\sqrt{2ln(2)}$$
 
 The theoretical resolutions are calculated as follows, depending on the
-microscope's type: $$\begin{aligned}
-            z_{resol, wide-field}=\frac{2*\lambda_{emission}}{NA^2}
-            \label{eqn:garr-zWF}\\
-            z_{resol, confocal}=\frac{1.4*\lambda_{emission}}{NA^2}
-            \label{eqn:garr-zConf}
-        
-\end{aligned}$$
+microscope's type:
+
+$$z_{resol, wide-field}=\frac{2*\lambda_{emission}}{NA^2}$$
+
+$$z_{resol, confocal}=\frac{1.4*\lambda_{emission}}{NA^2}$$
+
 
 ### How to use it ?
 
