@@ -265,7 +265,7 @@ For each couple of coordinates, a reference distance $r_{ref}$ is calculated. Th
 
 ![image](img/gcoar-dist.jpg)
 
-Therefore in 3D, the reference distance is calculated by considering a reference point and fitting a 3D ellipse around it for which the two characteristic radii correspond to x/y and z resolutions. In this matter changing from Cartesian coordinates to Polar coordinates make it more easy to calculate the reference distance. The two characteristic angles, the azimuth $\Phi$ and the zenith $\Theta$ (see expressions [\[eqn:gcoar-phi\]](#eqn:gcoar-phi) and [\[eqn:gcoar-theta\]](#eqn:gcoar-theta)) are first calculated, based on the coordinates of the two centres to analyse. Knowing this orientation, as well as the x, y and z resolutions ($res^\circ_{x}$, $res^\circ_{y}$ and $res^\circ_{z}$ respectively), the distance from the reference centre to the border of the ovoid shape **$r_{ref}$** is calculated (see expression [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist)). The inter-centre distance **$r$** is then compared to this reference distance to assess if co-localization occurs (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist)C) or not (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist)}B).
+Therefore in 3D, the reference distance is calculated by considering a reference point and fitting a 3D ellipse around it for which the two characteristic radii correspond to x/y and z resolutions. In this matter changing from Cartesian coordinates to Polar coordinates make it more easy to calculate the reference distance. The two characteristic angles, the azimuth $\Phi$ and the zenith $\Theta$ (see expressions [\[eqn:gcoar-phi\]](#eqn:gcoar-phi) and [\[eqn:gcoar-theta\]](#eqn:gcoar-theta)) are first calculated, based on the coordinates of the two centres to analyse. Knowing this orientation, as well as the x, y and z resolutions ($res^\circ_{x}$, $res^\circ_{y}$ and $res^\circ_{z}$ respectively), the distance from the reference centre to the border of the ovoid shape **$r_{ref}$** is calculated (see expression [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist)). The inter-centre distance **$r$** is then compared to this reference distance to assess if co-localization occurs (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist)C) or not (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist)B).
 
 
         $$\Phi=\arccos\frac{x_{B}-x_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2}}$$
@@ -282,8 +282,7 @@ Open two or three stacks containing exactly one bead;
 
 Launch the plugin by going to Plugins/MetroloJ/Generate co-alignement report
 
-The plugin's interface should appear (see fig.
-[\[fig:gcoar-interf\]](#fig:gcoar-interf));
+The plugin's interface should appear (see fig. [\[fig:gcoar-interf\]](#fig:gcoar-interf));
 
 ![image](img/gcoar-interf.jpg)
 
@@ -395,8 +394,7 @@ Launch the plugin by going to Plugins/MetroloJ/Generate axial resolution report
 
 In case the image has not been spatially calibrated, a message error pops up: click on Ok. In the calibration dialog box provide the appropriate values, then re-launch the plugin;
 
-The plugin's interface should appear (see fig.
-[\[fig:garr-interf\]](#fig:garr-interf));
+The plugin's interface should appear (see fig.[\[fig:garr-interf\]](#fig:garr-interf));
 
 ![image](img/garr-interf.jpg)
 
