@@ -1,4 +1,4 @@
-R07D3343530D1474# The MetroloJ plugin
+# The MetroloJ plugin
 
 author:[Fabrice P. Cordelières](mailto:fabrice.cordelieres@gmail.com), [Cédric Matthews](mailto:cedric.MATTHEWS@univ-amu.fr)
 
@@ -27,9 +27,9 @@ First, close ImageJ in case the software is already running. Copy and paste the 
 
 ***Fluorescent beads:*** their outer diameter should be below the resolution of the system to test. Two types of beads might be used:
 
-Mono-labelled beads. ex: Molecular Probes' [PS-Speck, Ref. P-7220](http://probes.invitrogen.com/media/pis/mp07220.pdf). However, their diameter of 0.17$\mu$m is a bit high for high NA objectives\...
+Mono-labelled beads. ex: Molecular Probes' [PS-Speck, Ref. P-7220](http://probes.invitrogen.com/media/pis/mp07220.pdf). However, their diameter of 0.17 µm is a bit high for high NA objectives\...
 
-Multi-labelled beads. ex: Molecular Probes' [TetraSpeck, Ref. T-7279](http://probes.invitrogen.com/media/pis/mp07279.pdf). Their diameter of 0.1$\mu$m is ideal, though having multi-labelled beads may lead to weaker signals\...
+Multi-labelled beads. ex: Molecular Probes' [TetraSpeck, Ref. T-7279](http://probes.invitrogen.com/media/pis/mp07279.pdf). Their diameter of 0.1 µm is ideal, though having multi-labelled beads may lead to weaker signals\...
 
 ***Regular slides***;
 
@@ -59,9 +59,9 @@ Use a vortex to mix the beads' stock suspension;
 
 Dilute the beads suspension in water. Here are some tips and facts:
 
-Typically, 200$\mu$l for a 24x24mm coverslip will be requiered;
+Typically, 200 µl for a 24x24mm coverslip will be requiered;
 
-In general, the 0.1$\mu$m [TetraSpeck](http://probes.invitrogen.com/media/pis/mp07279.pdf) should be diluted to 1/1,000, the [PS-Speck](http://probes.invitrogen.com/media/pis/mp07220.pdf) from 1/10,000 to 1/40,000;
+In general, the 0.1 µm [TetraSpeck](http://probes.invitrogen.com/media/pis/mp07279.pdf) should be diluted to 1/1,000, the [PS-Speck](http://probes.invitrogen.com/media/pis/mp07220.pdf) from 1/10,000 to 1/40,000;
 
 It is advised to first dilute the beads to 1/1,000, then make further serial dilution to achieve the appropriate beads' density on slide.
 
@@ -139,8 +139,7 @@ The pdf report is generated, and appropriate files saved.
 
 ## What's on the report ?
 
-The PSF report is composed of two to three pages (see an example of report on fig.
-[\[fig:gpr-report\]](#fig:gpr-report)) depending on the informations provided by the user. It is composed of up to 8 sections:
+The PSF report is composed of two to three pages (see an example of report on fig. [\[fig:gpr-report\]](#fig:gpr-report)) depending on the informations provided by the user. It is composed of up to 8 sections:
 
 ![image](img/gpr-report.jpg)
 
@@ -184,28 +183,22 @@ None\...yet.
 
 #### How to prepare the sample ?
 
-*This sample preparation is aimed at obtaining an array of fluorescent,
-multi-labelled beads, well appart one from the other, and stably stuck to a coverslip.*
+*This sample preparation is aimed at obtaining an array of fluorescent, multi-labelled beads, well appart one from the other, and stably stuck to a coverslip.*
 
 ##### What do I need ?
 
 ***Fluorescent beads:*** their outer diameter should be well above the resolution of the system to test. Two types of beads might be used:
 
-Uniformly labelled beads. ex: Molecular Probes' [4µm TetraSpeck,
-Ref. T-7283](http://probes.invitrogen.com/media/pis/mp07279.pdf).
+Uniformly labelled beads. ex: Molecular Probes' [4µm TetraSpeck, Ref. T-7283](http://probes.invitrogen.com/media/pis/mp07279.pdf).
 However, their diameter is a bit small for low NA objectives\...
 
-Non-uniformly labelled beads (inner core carrying one fluorescence,
-outer ring another). ex: Molecular Probes'
-[FocalCheck](http://probes.invitrogen.com/media/pis/mp07234.pdf).
+Non-uniformly labelled beads (inner core carrying one fluorescence, outer ring another). ex: Molecular Probes' [FocalCheck](http://probes.invitrogen.com/media/pis/mp07234.pdf).
 
 ***Regular slides***;
 
 ***Regular coverslips***: type 1.5 i.e. 0.17mm thick, either polylysine coated or not;
 
-If applicable, ***Poly-L-lysine solution*** (0.1 % (w/v) in $H_{2}O$)
-ex: [Sigma-Aldrich, Ref.
-P8920](http://www.sigmaaldrich.com/etc/medialib/docs/Sigma/generalinformation2/p8920.Par.0001.File.tmp/p8920.pdf);
+If applicable, ***Poly-L-lysine solution*** (0.1 % (w/v) in $H_{2}O$) ex: [Sigma-Aldrich, Ref. P8920](http://www.sigmaaldrich.com/etc/medialib/docs/Sigma/generalinformation2/p8920.Par.0001.File.tmp/p8920.pdf);
 
 ***Ethanol***;
 
@@ -244,16 +237,11 @@ Rince the coverslip 2-3 times in distilled water to remove the unattached beads,
 
 Mount the coverslip on the slide by using the mounting medium. In case of non setting media, the coverslip should be sealed onto the slide using nail polish, while avoiding the latter to come under the coverslip.
 
-NB: Other methods exists in order to produce beads slides, involving dilution in ethanol and leaving the suspension to evaporate. In this case, tests of higher beads dilution might be required. Please note that already prepared beads slides are commercially available (see
-[FocalCheck Fluorescent Microspheres Size Kit mounted on slide, Ref.
-F-24633 (6$\mu$m beads) and Ref. F-24634 (15$\mu$m beads)](http://probes.invitrogen.com/media/pis/mp07234.pdf)). However,
-this kind of preparation doesn't always match with the real *in situ*
-resolution as the mounting medium might be different from the one used in everyday acquisitions.
+NB: Other methods exists in order to produce beads slides, involving dilution in ethanol and leaving the suspension to evaporate. In this case, tests of higher beads dilution might be required. Please note that already prepared beads slides are commercially available (see [FocalCheck Fluorescent Microspheres Size Kit mounted on slide, Ref. F-24633 (6 µm beads) and Ref. F-24634 (15 µm beads)](http://probes.invitrogen.com/media/pis/mp07234.pdf)). However, this kind of preparation doesn't always match with the real *in situ* resolution as the mounting medium might be different from the one used in everyday acquisitions.
 
 #### How to acquire the image ?
 
-The following chart (see fig.
-[\[fig:gcoar-flowImg\]](#fig:gcoar-flowImg)) summarises the procedure for optimal image acquisition, in order to determine the co-alignement quality on a confocal microscope.
+The following chart (see fig. [\[fig:gcoar-flowImg\]](#fig:gcoar-flowImg)) summarises the procedure for optimal image acquisition, in order to determine the co-alignement quality on a confocal microscope.
 
 
 ### What does it do ?
@@ -273,20 +261,11 @@ Once all coordinates have been retrieved for each channel, distance between the 
 $$dist_{A-B}=\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2+(z_{B}-z_{A})^2}
         \label{eqn:gcoar-dist}$$
 
-For each couple of coordinates, a reference distance $r_{ref}$ is calculated. This distance is quite easy to determine in 2D as it corresponds to the xy resolution: while considering the centre of the structure on image A, a structure of image B will be co-localized if it is present within a circle traced around centre A of a radius equal to the xy resolution. Due to the disparate resolutions over the three dimensions, this distance is not so easy to calculate in 3D. However,
-the answer might come from the observation of the factor limiting the resolution: the PSF (Point Spread Function) and more precisely the first Airy disc which might be approximated in 3D as having an ovoid shape
-(see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist)).
+For each couple of coordinates, a reference distance $r_{ref}$ is calculated. This distance is quite easy to determine in 2D as it corresponds to the xy resolution: while considering the centre of the structure on image A, a structure of image B will be co-localized if it is present within a circle traced around centre A of a radius equal to the xy resolution. Due to the disparate resolutions over the three dimensions, this distance is not so easy to calculate in 3D. However, the answer might come from the observation of the factor limiting the resolution: the PSF (Point Spread Function) and more precisely the first Airy disc which might be approximated in 3D as having an ovoid shape (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist)).
 
 ![image](img/gcoar-dist.jpg)
 
-Therefore in 3D, the reference distance is calculated by considering a reference point and fitting a 3D ellipse around it for which the two characteristic radii correspond to x/y and z resolutions. In this matter changing from Cartesian coordinates to Polar coordinates make it more easy to calculate the reference distance. The two characteristic angles,
-the azimuth $\Phi$ and the zenith $\Theta$ (see expressions
-[\[eqn:gcoar-phi\]](#eqn:gcoar-phi) and
-[\[eqn:gcoar-theta\]](#eqn:gcoar-theta)) are first calculated, based on the coordinates of the two centres to analyse. Knowing this orientation, as well as the x, y and z resolutions ($res^\circ_{x}$, $res^\circ_{y}$ and
-$res^\circ_{z}$ respectively), the distance from the reference centre to the border of the ovoid shape **$r_{ref}$** is calculated (see expression
-[\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist)). The inter-centre distance **$r$** is then compared to this reference distance to assess if co-localization occurs (see fig.
-[\[fig:gcoar-dist\]](#fig:gcoar-dist)C) or not (see fig.
-[\[fig:gcoar-dist\]](#fig:gcoar-dist)}B).
+Therefore in 3D, the reference distance is calculated by considering a reference point and fitting a 3D ellipse around it for which the two characteristic radii correspond to x/y and z resolutions. In this matter changing from Cartesian coordinates to Polar coordinates make it more easy to calculate the reference distance. The two characteristic angles, the azimuth $\Phi$ and the zenith $\Theta$ (see expressions [\[eqn:gcoar-phi\]](#eqn:gcoar-phi) and [\[eqn:gcoar-theta\]](#eqn:gcoar-theta)) are first calculated, based on the coordinates of the two centres to analyse. Knowing this orientation, as well as the x, y and z resolutions ($res^\circ_{x}$, $res^\circ_{y}$ and $res^\circ_{z}$ respectively), the distance from the reference centre to the border of the ovoid shape **$r_{ref}$** is calculated (see expression [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist)). The inter-centre distance **$r$** is then compared to this reference distance to assess if co-localization occurs (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist)C) or not (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist)}B).
 
 
         $$\Phi=\arccos\frac{x_{B}-x_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2}}$$
@@ -323,8 +302,7 @@ The pdf report is generated, and appropriate files saved.
 
 ### What's on the report ?
 
-The co-alignement report is composed of two to three pages (see an example of report on fig.
-[\[fig:gcoar-report\]](#fig:gcoar-report)) depending on the informations provided by the user. It is composed of up to 7 sections:
+The co-alignement report is composed of two to three pages (see an example of report on fig. [\[fig:gcoar-report\]](#fig:gcoar-report)) depending on the informations provided by the user. It is composed of up to 7 sections:
 
 ![image](img/gcoar-report.jpg)
 
@@ -336,10 +314,7 @@ The co-alignement report is composed of two to three pages (see an example of re
 
 ***Distance table (uncalibrated)***: contains distances calculated between two channels, while not taking into account the actual images's calibration;
 
-***Distance table (calibrated)***: contains distances calculated between two channels, while taking into account the actual images's calibration.
-The distance printed between bracket is the reference distance (see
-[3.2](#sec:gcoar-what){reference-type="ref" reference="sec:gcoar-what"}
-and [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist));
+***Distance table (calibrated)***: contains distances calculated between two channels, while taking into account the actual images's calibration. The distance printed between bracket is the reference distance (see [3.2](#sec:gcoar-what){reference-type="ref" reference="sec:gcoar-what"} and [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist));
 
 ***Sample infos (optional)***: contains the informations entered by the user in the "Sample infos" section of the interface;
 
@@ -360,8 +335,7 @@ None\...yet.
 
 ##### What do I need ?
 
-***Single reflector mirror:*** ex: Edmund optics' [4-6 Wave Mirror 20mm x 20mm Enhanced Aluminum, Ref.
-NT43-872](http://www.edmundoptics.com/onlinecatalog/displayproduct.cfm?productid=1754&showall).
+***Single reflector mirror:*** ex: Edmund optics' [4-6 Wave Mirror 20mm x 20mm Enhanced Aluminum, Ref. NT43-872](http://www.edmundoptics.com/onlinecatalog/displayproduct.cfm?productid=1754&showall).
 
 ***Ethanol***;
 
@@ -389,9 +363,7 @@ Mount the coverslip on the slide/mirror by using the mounting medium (or immersi
 
 #### How to acquire the image ?
 
-The following chart (see fig.
-[\[fig:garr-flowImg\]](#fig:garr-flowImg){reference-type="ref"
-reference="fig:garr-flowImg"}) summarises the procedure for optimal image acquisition, in order to determine the axial resolution on a confocal microscope.
+The following chart (see fig. [\[fig:garr-flowImg\]](#fig:garr-flowImg){reference-type="ref" reference="fig:garr-flowImg"}) summarises the procedure for optimal image acquisition, in order to determine the axial resolution on a confocal microscope.
 
 
 ### What does it do ?
@@ -444,8 +416,7 @@ The pdf report is generated, and appropriate files saved.
 
 ### What's on the report ?
 
-The axial resolution report is composed of two pages (see an example of report on fig.
-[\[fig:garr-report\]](#fig:garr-report)). It is composed of up to 6 sections:
+The axial resolution report is composed of two pages (see an example of report on fig. [\[fig:garr-report\]](#fig:garr-report)). It is composed of up to 6 sections:
 
 ![image](img/garr-report.jpg)
 
@@ -467,8 +438,7 @@ standard deviation: standard deviation of the residuals;
 
 the correlation coefficient $R^{2}$ (gives indication on the fitting goodness).
 
-the Gaussian's constants a to d (see
-[\[eqn:gpr-gaussian\]](#eqn:gpr-gaussian)), c being the position of the beads centre along the x axis;
+the Gaussian's constants a to d (see [\[eqn:gpr-gaussian\]](#eqn:gpr-gaussian)), c being the position of the beads centre along the x axis;
 
 ***Sample infos (optional)***: contains the informations entered by the user in the "Sample infos" section of the interface;
 
