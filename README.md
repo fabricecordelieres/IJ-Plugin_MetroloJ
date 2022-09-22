@@ -1,19 +1,10 @@
----
-author:
-- "[Fabrice P. Cordelières](mailto:fabrice.cordelieres@gmail.com),
-  [Cédric Matthews](mailto:cedric.matthews@ibdml.univ-mrs.fr )"
-date: Beta version, 2022-09-22
-title: " **The MetroloJ plugin**"
----
+# The MetroloJ plugin
 
-::: center
-![image](img/logo_RT-MFM.jpg){width="0.35\\linewidth"}
-![image](img/logo_mrct.jpg){width="0.25\\linewidth"}
-:::
+author:[Fabrice P. Cordelières](mailto:fabrice.cordelieres@gmail.com), [Cédric Matthews](mailto:cedric.matthews@ibdml.univ-mrs.fr)
 
-::: flushright
-##  {#section .unnumbered}
+<img src="https://github.com/fabricecordelieres/IJ-Plugin_MetroloJ/blob/main/img/logo_RT-MFM.jpg" width=300 align=center>    <img src="https://github.com/fabricecordelieres/IJ-Plugin_MetroloJ/blob/main/img/logo_mrct.jpg" width=150 align=center>
 
+## Forewords
 *This manual and plugin comes as a result of a collective work of the
 "Metrology group" within the [French Technological Network of the
 Multi-Dimensional Fluorescence Microscopies
@@ -30,7 +21,7 @@ The Metrology group\
 **TO BE UPDATED***
 :::
 
-# How to install the plugin ?
+## How to install the plugin ?
 
 First, close ImageJ in case the software is already running. Copy and
 paste the ***MetroloJ.jar*** file into the ImageJ/Plugins folder.
@@ -41,27 +32,21 @@ paste it into the ImageJ/Plugins folder. Restart ImageJ.\
 A ***MetroloJ*** entry should appear under the ImageJ's plugins menu. It
 contains 2 entries:
 
-::: itemize*
-;
-
-;.
-:::
-
-::: center
 **To report any bug you may find while using this plugin, [please click
 here](mailto:fabrice.cordelieres@gmail.com,cedric.matthews@ibdml.univ-mrs.fr ?subject=Bug%20found%20in%20MetroloJ&body=%0ABug%20description:%0A%0AHow%20did%20it%20happen:%0A%0ACopy/Paste%20the%20content%20of%20the%20log%20window%0A%0AVersion%20of%20ImageJ:%0A%0AVersion%20of%20Java:)**.
 :::
 
-# Generate PSF report {#chap:grp}
+---
+## Generate PSF report {#chap:grp}
 
-## How to generate the images ? {#sec:gpr-what}
+### How to generate the images ? {#sec:gpr-what}
 
-### How to prepare the sample ? {#sec:gpr-proto}
+#### How to prepare the sample ? {#sec:gpr-proto}
 
 *This sample preparation is aimed at obtaining an array of fluorescent
 beads, well appart one from the other, and stably stuck to a coverslip.*
 
-#### What do I need ? {#sec:gpr-proto-what}
+##### What do I need ? {#sec:gpr-proto-what}
 
 ::: itemize*
 ***Fluorescent beads:*** their outer diameter should be below the
@@ -98,7 +83,7 @@ samples. Avoid using DAPI containing mounting media;
 medium.
 :::
 
-#### How do I do ? {#sec:gpr-proto-how}
+##### How do I do ? {#sec:gpr-proto-how}
 
 ::: enumerate*
 Clean the coverslip and the slide using ethanol;
@@ -159,7 +144,7 @@ this kind of preparation doesn't always match with the real *in situ*
 resolution as the mounting medium might be different from the one used
 in everyday acquisitions.
 
-### How to acquire the image ? {#sec:gpr-flow}
+#### How to acquire the image ? {#sec:gpr-flow}
 
 The following chart (see fig.
 [\[fig:gpr-flowImg\]](#fig:gpr-flowImg){reference-type="ref"
@@ -167,29 +152,8 @@ reference="fig:gpr-flowImg"}) summarises the procedure for optimal image
 acquisition, in order to determine the resolutions on a confocal
 microscope.
 
-::: pdfpic
-::: psmatrix
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-:::
-:::
 
-## What does it do ? {#sec:gpr-what}
+### What does it do ? {#sec:gpr-what}
 
 ::: enumerate*
 The plugin will generate a maximum intensity projection of the stack
@@ -227,7 +191,7 @@ microscope's type: $$\begin{aligned}
 \end{aligned}$$
 :::
 
-## How to use it ? {#sec:gpr-how}
+### How to use it ? {#sec:gpr-how}
 
 ::: enumerate*
 Start ImageJ;
@@ -337,17 +301,18 @@ None\...yet.
 here](mailto:fabrice.cordelieres@gmail.com,cedric.matthews@ibdml.univ-mrs.fr ?subject=Bug%20found%20in%20MetroloJ&body=%0ABug%20description:%0A%0AHow%20did%20it%20happen:%0A%0ACopy/Paste%20the%20content%20of%20the%20log%20window%0A%0AVersion%20of%20ImageJ:%0A%0AVersion%20of%20Java:)**.
 :::
 
-# Generate co-alignement report {#chap:gcoar}
+---
+## Generate co-alignement report {#chap:gcoar}
 
-## How to generate the images ? {#sec:gcoar-what}
+### How to generate the images ? {#sec:gcoar-what}
 
-### How to prepare the sample ? {#sec:gcoar-proto}
+#### How to prepare the sample ? {#sec:gcoar-proto}
 
 *This sample preparation is aimed at obtaining an array of fluorescent,
 multi-labelled beads, well appart one from the other, and stably stuck
 to a coverslip.*
 
-#### What do I need ? {#sec:gcoar-proto-what}
+##### What do I need ? {#sec:gcoar-proto-what}
 
 ::: itemize*
 ***Fluorescent beads:*** their outer diameter should be well above the
@@ -383,7 +348,7 @@ samples. Avoid using DAPI containing mounting media;
 medium.
 :::
 
-#### How do I do ? {#sec:gcoar-proto-how}
+##### How do I do ? {#sec:gcoar-proto-how}
 
 ::: enumerate*
 Clean the coverslip and the slide using ethanol;
@@ -438,7 +403,7 @@ this kind of preparation doesn't always match with the real *in situ*
 resolution as the mounting medium might be different from the one used
 in everyday acquisitions.
 
-### How to acquire the image ? {#sec:gcoar-flow}
+#### How to acquire the image ? {#sec:gcoar-flow}
 
 The following chart (see fig.
 [\[fig:gcoar-flowImg\]](#fig:gcoar-flowImg){reference-type="ref"
@@ -446,28 +411,8 @@ reference="fig:gcoar-flowImg"}) summarises the procedure for optimal
 image acquisition, in order to determine the co-alignement quality on a
 confocal microscope.
 
-::: pdfpic
-::: psmatrix
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-:::
-:::
 
-## What does it do ? {#sec:gcoar-what}
+### What does it do ? {#sec:gcoar-what}
 
 ::: enumerate*
 The plugin will generate two summed intensity projection of the stack
@@ -541,7 +486,7 @@ $$\begin{aligned}
 \end{aligned}$$
 :::
 
-## How to use it ? {#sec:gcoar-how}
+### How to use it ? {#sec:gcoar-how}
 
 ::: enumerate*
 Start ImageJ;
@@ -585,7 +530,7 @@ dialog box provide the appropriate values, then re-launch the plugin;
 The pdf report is generated, and appropriate files saved.
 :::
 
-## What's on the report ? {#sec:gcoar-rep}
+### What's on the report ? {#sec:gcoar-rep}
 
 The co-alignement report is composed of two to three pages (see an
 example of report on fig.
@@ -631,7 +576,7 @@ user in the "Sample infos" section of the interface;
 in the "Comments" section of the interface;
 :::
 
-## Known issues (to date\...) and workarounds (if any\...) {#sec:gcoar-ki}
+### Known issues (to date\...) and workarounds (if any\...) {#sec:gcoar-ki}
 
 None\...yet.
 
@@ -640,16 +585,17 @@ None\...yet.
 here](mailto:fabrice.cordelieres@gmail.com,cedric.matthews@ibdml.univ-mrs.fr ?subject=Bug%20found%20in%20MetroloJ&body=%0ABug%20description:%0A%0AHow%20did%20it%20happen:%0A%0ACopy/Paste%20the%20content%20of%20the%20log%20window%0A%0AVersion%20of%20ImageJ:%0A%0AVersion%20of%20Java:)**.
 :::
 
-# Generate axial resolution report {#chap:garr}
+---
+## Generate axial resolution report {#chap:garr}
 
-## How to generate the images ? {#sec:garr-what}
+### How to generate the images ? {#sec:garr-what}
 
-### Prepare the sample {#sec:garr-proto}
+#### Prepare the sample {#sec:garr-proto}
 
 *This sample preparation is aimed at fixing a reflective surface on a
 slide, overlaid by mounting medium, topped by a coverslip.*
 
-#### What do I need ? {#sec:garr-proto-what}
+##### What do I need ? {#sec:garr-proto-what}
 
 ::: itemize*
 ***Single reflector mirror:*** ex: Edmund optics' [4-6 Wave Mirror 20mm
@@ -672,7 +618,7 @@ samples. Avoid using DAPI containing mounting media. Alternatively,
 medium.
 :::
 
-#### How do I do ? {#sec:garr-proto-how}
+##### How do I do ? {#sec:garr-proto-how}
 
 ::: enumerate*
 Clean the coverslip, the mirror and the slide using ethanol;
@@ -690,7 +636,7 @@ onto the slide or the mirror (depending on its thickness) using nail
 polish.
 :::
 
-### How to acquire the image ? {#sec:garr-flow}
+#### How to acquire the image ? {#sec:garr-flow}
 
 The following chart (see fig.
 [\[fig:garr-flowImg\]](#fig:garr-flowImg){reference-type="ref"
@@ -698,28 +644,8 @@ reference="fig:garr-flowImg"}) summarises the procedure for optimal
 image acquisition, in order to determine the axial resolution on a
 confocal microscope.
 
-::: pdfpic
-::: psmatrix
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-:::
-:::
 
-## What does it do ? {#sec:garr-what}
+### What does it do ? {#sec:garr-what}
 
 ::: enumerate*
 After the user has defined a rectangular ROI, the plugin will generate
@@ -745,7 +671,7 @@ microscope's type: $$\begin{aligned}
 \end{aligned}$$
 :::
 
-## How to use it ? {#sec:garr-how}
+### How to use it ? {#sec:garr-how}
 
 ::: enumerate*
 Start ImageJ;
@@ -792,7 +718,7 @@ folder where all data will be saved;
 The pdf report is generated, and appropriate files saved.
 :::
 
-## What's on the report ? {#sec:garr-rep}
+### What's on the report ? {#sec:garr-rep}
 
 The axial resolution report is composed of two pages (see an example of
 report on fig.
@@ -845,7 +771,7 @@ user in the "Sample infos" section of the interface;
 in the "Comments" section of the interface;
 :::
 
-## Known issues (to date\...) and workarounds (if any\...) {#sec:garr-ki}
+### Known issues (to date\...) and workarounds (if any\...) {#sec:garr-ki}
 
 None\...yet.
 
