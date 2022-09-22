@@ -19,7 +19,7 @@ reference="fig:gcoar-report"}\
 Aude Jobart for images of spinning disc PSFs\
 The Metrology group\
 **TO BE UPDATED***
-:::
+
 
 ## How to install the plugin ?
 
@@ -44,11 +44,9 @@ beads, well appart one from the other, and stably stuck to a coverslip.*
 
 ##### What do I need ?
 
-::: itemize*
 ***Fluorescent beads:*** their outer diameter should be below the
 resolution of the system to test. Two types of beads might be used:
 
-::: itemize*
 Mono-labelled beads. ex: Molecular Probes' [PS-Speck, Ref.
 P-7220](http://probes.invitrogen.com/media/pis/mp07220.pdf). However,
 their diameter of 0.17$\mu$m is a bit high for high NA objectives\...
@@ -57,7 +55,6 @@ Multi-labelled beads. ex: Molecular Probes' [TetraSpeck, Ref.
 T-7279](http://probes.invitrogen.com/media/pis/mp07279.pdf). Their
 diameter of 0.1$\mu$m is ideal, though having multi-labelled beads may
 lead to weaker signals\...
-:::
 
 ***Regular slides***;
 
@@ -77,11 +74,9 @@ samples. Avoid using DAPI containing mounting media;
 
 ***Nail polish***: only in case the mounting solution is not a setting
 medium.
-:::
 
 ##### How do I do ?
 
-::: enumerate*
 Clean the coverslip and the slide using ethanol;
 
 Dilute the polylysine stock solution to 1/5$^{th}$;
@@ -99,7 +94,6 @@ Use a vortex to mix the beads' stock suspension;
 
 Dilute the beads suspension in water. Here are some tips and facts:
 
-::: itemize*
 Typically, 200$\mu$l for a 24x24mm coverslip will be requiered;
 
 In general, the 0.1$\mu$m
@@ -114,7 +108,6 @@ serial dilution to achieve the appropriate beads' density on slide.
 Tests should be done to define the appropriate dilution ratio;
 
 Always vortex the suspensions between and after dilutions;
-:::
 
 Poor a sufficient amount of the diluted beads suspension onto the
 coverslip surface and leave to sediment for at least 30 minutes. The
@@ -128,7 +121,6 @@ Mount the coverslip on the slide by using the mounting medium. In case
 of non setting media, the coverslip should be sealed onto the slide
 using nail polish, while avoiding the latter to come under the
 coverslip.
-:::
 
 NB: Other methods exists in order to produce beads slides, involving
 dilution in ethanol and leaving the suspension to evaporate. In this
@@ -143,8 +135,7 @@ in everyday acquisitions.
 #### How to acquire the image ?
 
 The following chart (see fig.
-[\[fig:gpr-flowImg\]](#fig:gpr-flowImg){reference-type="ref"
-reference="fig:gpr-flowImg"}) summarises the procedure for optimal image
+[\[fig:gpr-flowImg\]](#fig:gpr-flowImg)) summarises the procedure for optimal image
 acquisition, in order to determine the resolutions on a confocal
 microscope.
 
@@ -199,10 +190,9 @@ pops up: click on Ok. In the calibration dialog box provide the
 appropriate values, then re-launch the plugin;
 
 The plugin's interface should appear (see fig.
-[\[fig:gpr-interf\]](#fig:gpr-interf){reference-type="ref"
-reference="fig:gpr-interf"});
+[\[fig:gpr-interf\]](#fig:gpr-interf));
 
-![image](img/gpr-interf.jpg){width="0.35\\linewidth"}
+![image](img/gpr-interf.jpg)
 
 
 Choose the microscope's type, enter the emission wavelength, the
@@ -228,11 +218,10 @@ The pdf report is generated, and appropriate files saved.
 
 The PSF report is composed of two to three pages (see an example of
 report on fig.
-[\[fig:gpr-report\]](#fig:gpr-report){reference-type="ref"
-reference="fig:gpr-report"}) depending on the informations provided by
+[\[fig:gpr-report\]](#fig:gpr-report)) depending on the informations provided by
 the user. It is composed of up to 8 sections:
 
-![image](img/gpr-report.jpg){width="\\linewidth"}
+![image](img/gpr-report.jpg)
 
 ***Profile view***: image composed of three maximum intensity
 projections, XY, XZ and YZ;
@@ -260,8 +249,7 @@ the correlation coefficient $R^{2}$ (gives indication on the fitting
 goodness).
 
 the Gaussian's constants a to d (see
-[\[eqn:gpr-gaussian\]](#eqn:gpr-gaussian){reference-type="ref"
-reference="eqn:gpr-gaussian"}), c being the position of the beads centre
+[\[eqn:gpr-gaussian\]](#eqn:gpr-gaussian)), c being the position of the beads centre
 along the x axis;
 
 ***y profile and fitting parameters***: same as previous along y axis;
@@ -377,8 +365,7 @@ in everyday acquisitions.
 #### How to acquire the image ?
 
 The following chart (see fig.
-[\[fig:gcoar-flowImg\]](#fig:gcoar-flowImg){reference-type="ref"
-reference="fig:gcoar-flowImg"}) summarises the procedure for optimal
+[\[fig:gcoar-flowImg\]](#fig:gcoar-flowImg)) summarises the procedure for optimal
 image acquisition, in order to determine the co-alignement quality on a
 confocal microscope.
 
@@ -415,10 +402,9 @@ dimensions, this distance is not so easy to calculate in 3D. However,
 the answer might come from the observation of the factor limiting the
 resolution: the PSF (Point Spread Function) and more precisely the first
 Airy disc which might be approximated in 3D as having an ovoid shape
-(see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist){reference-type="ref"
-reference="fig:gcoar-dist"}).
+(see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist)).
 
-![image](img/gcoar-dist.jpg){width="0.9\\linewidth"}
+![image](img/gcoar-dist.jpg)
 
 Therefore in 3D, the reference distance is calculated by considering a
 reference point and fitting a 3D ellipse around it for which the two
@@ -426,23 +412,18 @@ characteristic radii correspond to x/y and z resolutions. In this matter
 changing from Cartesian coordinates to Polar coordinates make it more
 easy to calculate the reference distance. The two characteristic angles,
 the azimuth $\Phi$ and the zenith $\Theta$ (see expressions
-[\[eqn:gcoar-phi\]](#eqn:gcoar-phi){reference-type="ref"
-reference="eqn:gcoar-phi"} and
-[\[eqn:gcoar-theta\]](#eqn:gcoar-theta){reference-type="ref"
-reference="eqn:gcoar-theta"}) are first calculated, based on the
+[\[eqn:gcoar-phi\]](#eqn:gcoar-phi) and
+[\[eqn:gcoar-theta\]](#eqn:gcoar-theta)) are first calculated, based on the
 coordinates of the two centres to analyse. Knowing this orientation, as
 well as the x, y and z resolutions ($res^\circ_{x}$, $res^\circ_{y}$ and
 $res^\circ_{z}$ respectively), the distance from the reference centre to
 the border of the ovoid shape **$r_{ref}$** is calculated (see
 expression
-[\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist){reference-type="ref"
-reference="eqn:gcoar-refDist"}). The inter-centre distance **$r$** is
+[\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist)). The inter-centre distance **$r$** is
 then compared to this reference distance to assess if co-localization
 occurs (see fig.
-[\[fig:gcoar-dist\]](#fig:gcoar-dist){reference-type="ref"
-reference="fig:gcoar-dist"}C) or not (see fig.
-[\[fig:gcoar-dist\]](#fig:gcoar-dist){reference-type="ref"
-reference="fig:gcoar-dist"}B).
+[\[fig:gcoar-dist\]](#fig:gcoar-dist)C) or not (see fig.
+[\[fig:gcoar-dist\]](#fig:gcoar-dist)}B).
 
 $$\begin{aligned}
         \Phi=\arccos\frac{x_{B}-x_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2}}\label{eqn:gcoar-phi}\\
@@ -461,10 +442,9 @@ Launch the plugin by going to Plugins/MetroloJ/Generate co-alignement
 report
 
 The plugin's interface should appear (see fig.
-[\[fig:gcoar-interf\]](#fig:gcoar-interf){reference-type="ref"
-reference="fig:gcoar-interf"});
+[\[fig:gcoar-interf\]](#fig:gcoar-interf));
 
-![image](img/gcoar-interf.jpg){width="0.35\\linewidth"}
+![image](img/gcoar-interf.jpg)
 
 Enter a title for the report, choose which stack should be used for
 analysis (under "Stack 3", "none" might also be used), the microscope's
@@ -491,11 +471,10 @@ The pdf report is generated, and appropriate files saved.
 
 The co-alignement report is composed of two to three pages (see an
 example of report on fig.
-[\[fig:gcoar-report\]](#fig:gcoar-report){reference-type="ref"
-reference="fig:gcoar-report"}) depending on the informations provided by
+[\[fig:gcoar-report\]](#fig:gcoar-report)) depending on the informations provided by
 the user. It is composed of up to 7 sections:
 
-![image](img/gcoar-report.jpg){width="\\linewidth"}
+![image](img/gcoar-report.jpg)
 
 ***Profile view***: image composed of three maximum intensity
 projections, XY, XZ and YZ;
@@ -518,8 +497,7 @@ calibration;
 two channels, while taking into account the actual images's calibration.
 The distance printed between bracket is the reference distance (see
 [3.2](#sec:gcoar-what){reference-type="ref" reference="sec:gcoar-what"}
-and [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist){reference-type="ref"
-reference="eqn:gcoar-refDist"});
+and [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist));
 
 ***Sample infos (optional)***: contains the informations entered by the
 user in the "Sample infos" section of the interface;
@@ -626,10 +604,9 @@ pops up: click on Ok. In the calibration dialog box provide the
 appropriate values, then re-launch the plugin;
 
 The plugin's interface should appear (see fig.
-[\[fig:garr-interf\]](#fig:garr-interf){reference-type="ref"
-reference="fig:garr-interf"});
+[\[fig:garr-interf\]](#fig:garr-interf));
 
-![image](img/garr-interf.jpg){width="0.35\\linewidth"}
+![image](img/garr-interf.jpg)
 
 Select the position of the ROI and adjust its width;
 
@@ -655,10 +632,9 @@ The pdf report is generated, and appropriate files saved.
 
 The axial resolution report is composed of two pages (see an example of
 report on fig.
-[\[fig:garr-report\]](#fig:garr-report){reference-type="ref"
-reference="fig:garr-report"}). It is composed of up to 6 sections:
+[\[fig:garr-report\]](#fig:garr-report)). It is composed of up to 6 sections:
 
-![image](img/garr-report.jpg){width="\\linewidth"}
+![image](img/garr-report.jpg)
 
 ***Profile view***: a calibrated image of the profile, including the
 ROI's outlines;
@@ -686,8 +662,7 @@ the correlation coefficient $R^{2}$ (gives indication on the fitting
 goodness).
 
 the Gaussian's constants a to d (see
-[\[eqn:gpr-gaussian\]](#eqn:gpr-gaussian){reference-type="ref"
-reference="eqn:gpr-gaussian"}), c being the position of the beads centre
+[\[eqn:gpr-gaussian\]](#eqn:gpr-gaussian)), c being the position of the beads centre
 along the x axis;
 
 ***Sample infos (optional)***: contains the informations entered by the
