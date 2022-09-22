@@ -1,6 +1,6 @@
 # The MetroloJ plugin
 
-author:[Fabrice P. Cordelières](mailto:fabrice.cordelieres@gmail.com), [Cédric Matthews](mailto:cedric.matthews@ibdml.univ-mrs.fr)
+author:[Fabrice P. Cordelières](mailto:fabrice.cordelieres@gmail.com), [Cédric Matthews](mailto:cedric.MATTHEWS@univ-amu.fr)
 
 <img src="https://github.com/fabricecordelieres/IJ-Plugin_MetroloJ/blob/main/img/logo_RT-MFM.jpg" width=300 align=center>    <img src="https://github.com/fabricecordelieres/IJ-Plugin_MetroloJ/blob/main/img/logo_mrct.jpg" width=150 align=center>
 
@@ -32,21 +32,17 @@ paste it into the ImageJ/Plugins folder. Restart ImageJ.\
 A ***MetroloJ*** entry should appear under the ImageJ's plugins menu. It
 contains 2 entries:
 
-**To report any bug you may find while using this plugin, [please click
-here](mailto:fabrice.cordelieres@gmail.com,cedric.matthews@ibdml.univ-mrs.fr ?subject=Bug%20found%20in%20MetroloJ&body=%0ABug%20description:%0A%0AHow%20did%20it%20happen:%0A%0ACopy/Paste%20the%20content%20of%20the%20log%20window%0A%0AVersion%20of%20ImageJ:%0A%0AVersion%20of%20Java:)**.
-:::
-
 ---
-## Generate PSF report {#chap:grp}
+## Generate PSF report
 
-### How to generate the images ? {#sec:gpr-what}
+### How to generate the images ?
 
-#### How to prepare the sample ? {#sec:gpr-proto}
+#### How to prepare the sample ?
 
 *This sample preparation is aimed at obtaining an array of fluorescent
 beads, well appart one from the other, and stably stuck to a coverslip.*
 
-##### What do I need ? {#sec:gpr-proto-what}
+##### What do I need ?
 
 ::: itemize*
 ***Fluorescent beads:*** their outer diameter should be below the
@@ -83,7 +79,7 @@ samples. Avoid using DAPI containing mounting media;
 medium.
 :::
 
-##### How do I do ? {#sec:gpr-proto-how}
+##### How do I do ?
 
 ::: enumerate*
 Clean the coverslip and the slide using ethanol;
@@ -144,7 +140,7 @@ this kind of preparation doesn't always match with the real *in situ*
 resolution as the mounting medium might be different from the one used
 in everyday acquisitions.
 
-#### How to acquire the image ? {#sec:gpr-flow}
+#### How to acquire the image ?
 
 The following chart (see fig.
 [\[fig:gpr-flowImg\]](#fig:gpr-flowImg){reference-type="ref"
@@ -153,9 +149,8 @@ acquisition, in order to determine the resolutions on a confocal
 microscope.
 
 
-### What does it do ? {#sec:gpr-what}
+### What does it do ?
 
-::: enumerate*
 The plugin will generate a maximum intensity projection of the stack
 along the z axis. The (x, y) coordinates of the maximum intensity pixel
 (MIPix) are then collected. A XZ cross-section is generated, along a
@@ -189,11 +184,10 @@ microscope's type: $$\begin{aligned}
             \label{eqn:gpr-zConf}
         
 \end{aligned}$$
-:::
 
-### How to use it ? {#sec:gpr-how}
 
-::: enumerate*
+### How to use it ?
+
 Start ImageJ;
 
 Open a stack containing exactly one bead;
@@ -208,33 +202,29 @@ The plugin's interface should appear (see fig.
 [\[fig:gpr-interf\]](#fig:gpr-interf){reference-type="ref"
 reference="fig:gpr-interf"});
 
-::: center
-  -------------------------------------------------------
-   ![image](img/gpr-interf.jpg){width="0.35\\linewidth"}
-  -------------------------------------------------------
-:::
+![image](img/gpr-interf.jpg){width="0.35\\linewidth"}
+
 
 Choose the microscope's type, enter the emission wavelength, the
 numerical aperture of the objective and the pinhole aperture. Sample
 informations and some comments might also be provided using the
 appropriate boxes. Ticking the "Save image/plots/data" will generate:
 
-::: itemize*
 a jpeg image of the side-views;
 
 three files containing tabulation separated values of the x, y and z
 profiles (excel files);
 
 a file containing tabulation separated values of the report's summary.
-:::
+
 
 Click on Ok: a new dialog box appears, inviting the user to choose a
 folder where all data will be saved;
 
 The pdf report is generated, and appropriate files saved.
-:::
 
-## What's on the report ? {#sec:gpr-rep}
+
+## What's on the report ?
 
 The PSF report is composed of two to three pages (see an example of
 report on fig.
@@ -242,13 +232,8 @@ report on fig.
 reference="fig:gpr-report"}) depending on the informations provided by
 the user. It is composed of up to 8 sections:
 
-::: center
-  ---------------------------------------------------
-   ![image](img/gpr-report.jpg){width="\\linewidth"}
-  ---------------------------------------------------
-:::
+![image](img/gpr-report.jpg){width="\\linewidth"}
 
-::: itemize*
 ***Profile view***: image composed of three maximum intensity
 projections, XY, XZ and YZ;
 
@@ -262,7 +247,6 @@ fitting and the theoretical, calculated ones;
 profile along the x axis and the fitted curve. On the right side of the
 graph stand the fitting parameters:
 
-::: itemize*
 equation against which the profile is fitted;
 
 number of iterations: self-explanatory;
@@ -279,7 +263,6 @@ the Gaussian's constants a to d (see
 [\[eqn:gpr-gaussian\]](#eqn:gpr-gaussian){reference-type="ref"
 reference="eqn:gpr-gaussian"}), c being the position of the beads centre
 along the x axis;
-:::
 
 ***y profile and fitting parameters***: same as previous along y axis;
 
@@ -292,33 +275,26 @@ user in the "Sample infos" section of the interface;
 in the "Comments" section of the interface;
 :::
 
-## Known issues (to date\...) and workarounds (if any\...) {#sec:gpr-ki}
+## Known issues (to date\...) and workarounds (if any\...)
 
 None\...yet.
 
-::: center
-**To report any bug you may find while using this plugin, [please click
-here](mailto:fabrice.cordelieres@gmail.com,cedric.matthews@ibdml.univ-mrs.fr ?subject=Bug%20found%20in%20MetroloJ&body=%0ABug%20description:%0A%0AHow%20did%20it%20happen:%0A%0ACopy/Paste%20the%20content%20of%20the%20log%20window%0A%0AVersion%20of%20ImageJ:%0A%0AVersion%20of%20Java:)**.
-:::
-
 ---
-## Generate co-alignement report {#chap:gcoar}
+## Generate co-alignement report
 
-### How to generate the images ? {#sec:gcoar-what}
+### How to generate the images ?
 
-#### How to prepare the sample ? {#sec:gcoar-proto}
+#### How to prepare the sample ?
 
 *This sample preparation is aimed at obtaining an array of fluorescent,
 multi-labelled beads, well appart one from the other, and stably stuck
 to a coverslip.*
 
-##### What do I need ? {#sec:gcoar-proto-what}
+##### What do I need ?
 
-::: itemize*
 ***Fluorescent beads:*** their outer diameter should be well above the
 resolution of the system to test. Two types of beads might be used:
 
-::: itemize*
 Uniformly labelled beads. ex: Molecular Probes' [4$\mu$m TetraSpeck,
 Ref. T-7283](http://probes.invitrogen.com/media/pis/mp07279.pdf).
 However, their diameter is a bit small for low NA objectives\...
@@ -326,7 +302,6 @@ However, their diameter is a bit small for low NA objectives\...
 Non-uniformly labelled beads (inner core carrying one fluorescence,
 outer ring another). ex: Molecular Probes'
 [FocalCheck](http://probes.invitrogen.com/media/pis/mp07234.pdf).
-:::
 
 ***Regular slides***;
 
@@ -348,9 +323,8 @@ samples. Avoid using DAPI containing mounting media;
 medium.
 :::
 
-##### How do I do ? {#sec:gcoar-proto-how}
+##### How do I do ?
 
-::: enumerate*
 Clean the coverslip and the slide using ethanol;
 
 Dilute the polylysine stock solution to 1/5$^{th}$;
@@ -368,7 +342,6 @@ Use a vortex to mix the beads' stock suspension;
 
 Dilute the beads suspension in water. Here are some tips and facts:
 
-::: itemize*
 Typically, 200$\mu$l for a 24x24mm coverslip will be requiered;
 
 In general, the beads should not be diluted much from 1/10 to 1/100;
@@ -376,7 +349,6 @@ In general, the beads should not be diluted much from 1/10 to 1/100;
 Tests should be done to define the appropriate dilution ratio;
 
 Always vortex the suspensions between and after dilutions;
-:::
 
 Poor a sufficient amount of the diluted beads suspension onto the
 coverslip surface and leave to sediment for at least 30 minutes. The
@@ -390,7 +362,6 @@ Mount the coverslip on the slide by using the mounting medium. In case
 of non setting media, the coverslip should be sealed onto the slide
 using nail polish, while avoiding the latter to come under the
 coverslip.
-:::
 
 NB: Other methods exists in order to produce beads slides, involving
 dilution in ethanol and leaving the suspension to evaporate. In this
@@ -403,7 +374,7 @@ this kind of preparation doesn't always match with the real *in situ*
 resolution as the mounting medium might be different from the one used
 in everyday acquisitions.
 
-#### How to acquire the image ? {#sec:gcoar-flow}
+#### How to acquire the image ?
 
 The following chart (see fig.
 [\[fig:gcoar-flowImg\]](#fig:gcoar-flowImg){reference-type="ref"
@@ -412,9 +383,8 @@ image acquisition, in order to determine the co-alignement quality on a
 confocal microscope.
 
 
-### What does it do ? {#sec:gcoar-what}
+### What does it do ?
 
-::: enumerate*
 The plugin will generate two summed intensity projection of the stack
 along the y and z axes;
 
@@ -448,11 +418,7 @@ Airy disc which might be approximated in 3D as having an ovoid shape
 (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist){reference-type="ref"
 reference="fig:gcoar-dist"}).
 
-::: center
-  ------------------------------------------------------
-   ![image](img/gcoar-dist.jpg){width="0.9\\linewidth"}
-  ------------------------------------------------------
-:::
+![image](img/gcoar-dist.jpg){width="0.9\\linewidth"}
 
 Therefore in 3D, the reference distance is calculated by considering a
 reference point and fitting a 3D ellipse around it for which the two
@@ -484,11 +450,9 @@ $$\begin{aligned}
         r_{ref}=\sqrt{(res^\circ_{x}\times\sin\Theta\times\cos\Phi )^2+(res^\circ_{y}\times\sin\Theta\times\sin\Phi)^2+(res^\circ_{z}\times\cos\Theta)^2}\label{eqn:gcoar-refDist}
     
 \end{aligned}$$
-:::
 
-### How to use it ? {#sec:gcoar-how}
+### How to use it ?
 
-::: enumerate*
 Start ImageJ;
 
 Open two or three stacks containing exactly one bead;
@@ -500,11 +464,7 @@ The plugin's interface should appear (see fig.
 [\[fig:gcoar-interf\]](#fig:gcoar-interf){reference-type="ref"
 reference="fig:gcoar-interf"});
 
-::: center
-  ---------------------------------------------------------
-   ![image](img/gcoar-interf.jpg){width="0.35\\linewidth"}
-  ---------------------------------------------------------
-:::
+![image](img/gcoar-interf.jpg){width="0.35\\linewidth"}
 
 Enter a title for the report, choose which stack should be used for
 analysis (under "Stack 3", "none" might also be used), the microscope's
@@ -513,12 +473,10 @@ aperture of the objective and the pinhole aperture. Sample informations
 and some comments might also be provided using the appropriate boxes.
 Ticking the "Save image/plots/data" will generate:
 
-::: itemize*
 a jpeg image of the side-views;
 
 a file containing tabulation separated values of all the numerical data
 from the report.
-:::
 
 Click on Ok: a new dialog box appears, inviting the user to choose a
 folder where all data will be saved;
@@ -528,9 +486,8 @@ calibrated, a message error pops up: click on Ok. In the calibration
 dialog box provide the appropriate values, then re-launch the plugin;
 
 The pdf report is generated, and appropriate files saved.
-:::
 
-### What's on the report ? {#sec:gcoar-rep}
+### What's on the report ?
 
 The co-alignement report is composed of two to three pages (see an
 example of report on fig.
@@ -538,13 +495,8 @@ example of report on fig.
 reference="fig:gcoar-report"}) depending on the informations provided by
 the user. It is composed of up to 7 sections:
 
-::: center
-  -----------------------------------------------------
-   ![image](img/gcoar-report.jpg){width="\\linewidth"}
-  -----------------------------------------------------
-:::
+![image](img/gcoar-report.jpg){width="\\linewidth"}
 
-::: itemize*
 ***Profile view***: image composed of three maximum intensity
 projections, XY, XZ and YZ;
 
@@ -574,30 +526,23 @@ user in the "Sample infos" section of the interface;
 
 ***Comments (optional)***: contains the informations entered by the user
 in the "Comments" section of the interface;
-:::
 
-### Known issues (to date\...) and workarounds (if any\...) {#sec:gcoar-ki}
+### Known issues (to date\...) and workarounds (if any\...)
 
 None\...yet.
 
-::: center
-**To report any bug you may find while using this plugin, [please click
-here](mailto:fabrice.cordelieres@gmail.com,cedric.matthews@ibdml.univ-mrs.fr ?subject=Bug%20found%20in%20MetroloJ&body=%0ABug%20description:%0A%0AHow%20did%20it%20happen:%0A%0ACopy/Paste%20the%20content%20of%20the%20log%20window%0A%0AVersion%20of%20ImageJ:%0A%0AVersion%20of%20Java:)**.
-:::
-
 ---
-## Generate axial resolution report {#chap:garr}
+## Generate axial resolution report
 
-### How to generate the images ? {#sec:garr-what}
+### How to generate the images ?
 
-#### Prepare the sample {#sec:garr-proto}
+#### Prepare the sample
 
 *This sample preparation is aimed at fixing a reflective surface on a
 slide, overlaid by mounting medium, topped by a coverslip.*
 
-##### What do I need ? {#sec:garr-proto-what}
+##### What do I need ?
 
-::: itemize*
 ***Single reflector mirror:*** ex: Edmund optics' [4-6 Wave Mirror 20mm
 x 20mm Enhanced Aluminum, Ref.
 NT43-872](http://www.edmundoptics.com/onlinecatalog/displayproduct.cfm?productid=1754&showall).
@@ -618,9 +563,8 @@ samples. Avoid using DAPI containing mounting media. Alternatively,
 medium.
 :::
 
-##### How do I do ? {#sec:garr-proto-how}
+##### How do I do ?
 
-::: enumerate*
 Clean the coverslip, the mirror and the slide using ethanol;
 
 Glue the mirror to the coverslip. Warning: make sure that you glue the
@@ -634,9 +578,8 @@ immersion oil). Remove excess of solution by pressing firmly on the
 coverslip. In case of non setting media, the coverslip should be sealed
 onto the slide or the mirror (depending on its thickness) using nail
 polish.
-:::
 
-#### How to acquire the image ? {#sec:garr-flow}
+#### How to acquire the image ?
 
 The following chart (see fig.
 [\[fig:garr-flowImg\]](#fig:garr-flowImg){reference-type="ref"
@@ -645,9 +588,8 @@ image acquisition, in order to determine the axial resolution on a
 confocal microscope.
 
 
-### What does it do ? {#sec:garr-what}
+### What does it do ?
 
-::: enumerate*
 After the user has defined a rectangular ROI, the plugin will generate
 an average intensity projection of the image along the y axis.
 
@@ -669,11 +611,9 @@ microscope's type: $$\begin{aligned}
             \label{eqn:garr-zConf}
         
 \end{aligned}$$
-:::
 
-### How to use it ? {#sec:garr-how}
+### How to use it ?
 
-::: enumerate*
 Start ImageJ;
 
 Open the image of the z profile;
@@ -689,11 +629,7 @@ The plugin's interface should appear (see fig.
 [\[fig:garr-interf\]](#fig:garr-interf){reference-type="ref"
 reference="fig:garr-interf"});
 
-::: center
-  --------------------------------------------------------
-   ![image](img/garr-interf.jpg){width="0.35\\linewidth"}
-  --------------------------------------------------------
-:::
+![image](img/garr-interf.jpg){width="0.35\\linewidth"}
 
 Select the position of the ROI and adjust its width;
 
@@ -702,7 +638,6 @@ numerical aperture of the objective and the pinhole aperture. Sample
 informations and some comments might also be provided using the
 appropriate boxes. Ticking the "Save image/plots/data" will generate:
 
-::: itemize*
 a calibrated jpeg image of the profile, including the ROI's outlines;
 
 a file containing tabulation separated values of the z profile (excel
@@ -710,28 +645,21 @@ files);
 
 a file containing tabulation separated values of all the numerical data
 from the report.
-:::
 
 Click on Ok: a new dialog box appears, inviting the user to choose a
 folder where all data will be saved;
 
 The pdf report is generated, and appropriate files saved.
-:::
 
-### What's on the report ? {#sec:garr-rep}
+### What's on the report ?
 
 The axial resolution report is composed of two pages (see an example of
 report on fig.
 [\[fig:garr-report\]](#fig:garr-report){reference-type="ref"
 reference="fig:garr-report"}). It is composed of up to 6 sections:
 
-::: center
-  ----------------------------------------------------
-   ![image](img/garr-report.jpg){width="\\linewidth"}
-  ----------------------------------------------------
-:::
+![image](img/garr-report.jpg){width="\\linewidth"}
 
-::: itemize*
 ***Profile view***: a calibrated image of the profile, including the
 ROI's outlines;
 
@@ -745,7 +673,6 @@ axial resolutions (experimental and theoretical);;
 profile along the z axis and the fitted curve. On the right side of the
 graph stand the fitting parameters:
 
-::: itemize*
 equation against which the profile is fitted;
 
 number of iterations: self-explanatory;
@@ -762,20 +689,13 @@ the Gaussian's constants a to d (see
 [\[eqn:gpr-gaussian\]](#eqn:gpr-gaussian){reference-type="ref"
 reference="eqn:gpr-gaussian"}), c being the position of the beads centre
 along the x axis;
-:::
 
 ***Sample infos (optional)***: contains the informations entered by the
 user in the "Sample infos" section of the interface;
 
 ***Comments (optional)***: contains the informations entered by the user
 in the "Comments" section of the interface;
-:::
 
-### Known issues (to date\...) and workarounds (if any\...) {#sec:garr-ki}
+### Known issues (to date\...) and workarounds (if any\...)
 
 None\...yet.
-
-::: center
-**To report any bug you may find while using this plugin, [please click
-here](mailto:fabrice.cordelieres@gmail.com,cedric.matthews@ibdml.univ-mrs.fr ?subject=Bug%20found%20in%20MetroloJ&body=%0ABug%20description:%0A%0AHow%20did%20it%20happen:%0A%0ACopy/Paste%20the%20content%20of%20the%20log%20window%0A%0AVersion%20of%20ImageJ:%0A%0AVersion%20of%20Java:)**.
-:::
