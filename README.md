@@ -411,5 +411,3 @@ The co-alignement report is composed of two to three pages (see an example of re
 
 ## Known issues (to date...) and workarounds (if any...)
 None...yet.
-
-**To report any bug you may find while using this plugin, [please click here](mailto:fabrice.cordelieres@gmail.com,cedric.matthews@ibdml.univ-mrs.fr ?subject=Bug%20found%20in%20MetroloJ&body=%0ABug%20description:%0A%0AHow%20did%20it%20happen:%0A%0ACopy/Paste%20the%20content%20of%20the%20log%20window%0A%0AVersion%20of%20ImageJ:%0A%0AVersion%20of%20Java:)**.
