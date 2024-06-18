@@ -5,11 +5,10 @@ author:[Fabrice P. Cordelières](mailto:fabrice.cordelieres@gmail.com), [Cédric
 <img src="https://github.com/fabricecordelieres/IJ-Plugin_MetroloJ/blob/main/img/logo_RT-MFM.jpg" width=300 align=center>    <img src="https://github.com/fabricecordelieres/IJ-Plugin_MetroloJ/blob/main/img/logo_mrct.jpg" width=150 align=center>
 
 ## Forewords
-*This manual and plugin comes as a result of a collective work of the "Metrology group" within the [French Technological Network of the Multi-Dimensional Fluorescence Microscopies (RT-MFM)](http://rtmfm.ibl.fr/), supported by the ["Mission Ressources et Compétences Technologiques" (MRCT)](http://www.mrct.cnrs.fr/).\ The authors would like to thank:\ Aurélie Le Ru for reporting the time-shift bug.\ François Waharte (A COMPLETER) for beta-testing and bug tracking.\ Claude-Marie Bachelet and Aurélien Dauphin for the images used in fig. [\[fig:gcoar-report\]](#fig:gcoar-report){reference-type="ref" reference="fig:gcoar-report"}\ Aude Jobart for images of spinning disc PSFs\
-The Metrology group\
-**TO BE UPDATED***
+*This manual and plugin comes as a result of a collective work of the "Metrology group" within the [French Technological Network of the Multi-Dimensional Fluorescence Microscopies (RT-MFM)](http://rtmfm.ibl.fr/), supported by the ["Mission Ressources et Compétences Technologiques" (MRCT)](http://www.mrct.cnrs.fr/). The authors would like to thank: Aurélie Le Ru for reporting the time-shift bug. François Waharte for beta-testing and bug tracking. Claude-Marie Bachelet and Aurélien Dauphin for the images used in chapter [Generate co-alignement report](#generate-co-alignement-report)  Aude Jobart for images of spinning disc PSFs
+The Metrology group
 
-
+---
 ## How to install the plugin ?
 
 First, close ImageJ in case the software is already running. Copy and paste the ***MetroloJ.jar*** file into the ImageJ/Plugins folder. Download the ***iText library*** by following [this link](http://prdownloads.sourceforge.net/itext/iText-2.1.5.jar). This library will be used by the plugin to generate pdf reports. Copy and paste it into the ImageJ/Plugins folder. Restart ImageJ.\ A ***MetroloJ*** entry should appear under the ImageJ's plugins menu. It contains 2 entries:
@@ -90,7 +89,7 @@ The z slice is set to the z MIPix coordinate. The x profile and y profile are co
 
 All three profiles are fitted to a Gaussian, using the following equation and ImageJ's built-in curve fitting function:
 
-$$y = a + (b-a)*e^{\frac{-(x-c)^{2}}{2*d^{2}}}$$
+$$y = a + (b-a)e^\frac{-(x-c)^2}{2d^2}$$
 
 The resolution i.e. the full-width at half-maximum (FWHM) is calculated as follows for each profile, based on the parameters retrieved from the fitting:
 
@@ -303,7 +302,7 @@ The pdf report is generated, and appropriate files saved.
 
 The co-alignement report is composed of two to three pages (see an example of report on fig. [\[fig:gcoar-report\]](#fig:gcoar-report)) depending on the informations provided by the user. It is composed of up to 7 sections:
 
-![image](img/gcoar-report.jpg)
+![fig:gcoar-report](img/gcoar-report.jpg)
 
 ***Profile view***: image composed of three maximum intensity projections, XY, XZ and YZ;
 
