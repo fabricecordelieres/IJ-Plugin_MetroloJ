@@ -1,0 +1,41 @@
+\documentclass{article}
+\input tmp.inputs
+\pagestyle{empty}
+\begin{document}
+		\begin{psmatrix}[colsep=0.4,rowsep=0.3075]
+			[name=1] \psovalbox[fillstyle=solid, fillcolor=yellow, shadow=true]{\textbf{Begin}}\\
+			[name=2] \psframebox[shadow=true]{Set the scanning mode to XYZ}\\
+			[name=3] \psframebox[shadow=true]{Set the zoom to reach a slight oversampling rate}\\
+			[name=4] \psframebox[shadow=true]{Adjust the laser output to its minimum}\\
+			[name=5] \psframebox[shadow=true]{Adjust z position}\\
+			[name=6] \psdiabox[fillstyle=solid, fillcolor=lightgray, shadow=true]{\begin{tabular}{c}Centre of the\\bead found ?\end{tabular}}\\\\
+			[name=7] \psframebox[shadow=true]{Adjust xy position}\\
+			[name=8] \psdiabox[fillstyle=solid, fillcolor=lightgray, shadow=true]{\begin{tabular}{c}Centre well\\centred on pixels ?\end{tabular}}\\\\
+			[name=9] \psframebox[shadow=true]{Set the acquisition's top and bottom}\\
+			[name=10] \psframebox[shadow=true]{Adjust PMT's gain}\\
+			[name=11] \psdiabox[fillstyle=solid, fillcolor=lightgray,shadow=true]{\begin{tabular}{c}Image's centre close\\to saturation ?\end{tabular}}\\\\
+			[name=12] \psframebox[shadow=true]{Set the acquisition averaging to 2-4}\\
+			[name=13] \psframebox[shadow=true]{Acquire the stack}\\
+			[name=14] \psframebox[shadow=true]{Generate the report using MetroloJ}\\
+			[name=15] \psovalbox[fillstyle=solid, fillcolor=yellow, shadow=true]{\textbf{End}}
+
+			\ncline{->}{1}{2}
+			\ncline{->}{2}{3}
+			\ncline{->}{3}{4}
+			\ncline{->}{4}{5}
+			\ncline{->}{5}{6}
+			\ncangles[loopsize=1, arm=.5]{->}{6}{5} \aput{:U}{\textbf{No}}
+			\ncline{->}{6}{7}\aput{:U}{\textbf{Yes}}
+			\ncline{->}{7}{8}
+			\ncangles[loopsize=1, arm=.5]{->}{8}{7} \aput{:U}{\textbf{No}}
+			\ncline{->}{8}{9} \aput{:U}{\textbf{Yes}}
+			\ncline{->}{9}{10}
+			\ncline{->}{10}{11}
+			\ncangles[loopsize=1, arm=.5]{->}{11}{10} \aput{:U}{\textbf{No}}
+			\ncline{->}{11}{12}\aput{:U}{\textbf{Yes}}
+			\ncline{->}{12}{13}
+			\ncline{->}{13}{14}
+			\ncline{->}{14}{15}
+		\end{psmatrix}
+	
+\end{document}

@@ -1,0 +1,34 @@
+\documentclass{article}
+\input tmp.inputs
+\pagestyle{empty}
+\begin{document}
+		\begin{psmatrix}[colsep=0.4,rowsep=0.3075]
+			[name=1] \psovalbox[fillstyle=solid, fillcolor=yellow, shadow=true]{\textbf{Begin}}\\
+			[name=2] \psframebox[shadow=true]{Set the scanning mode to XYZ}\\
+			[name=3] \psframebox[shadow=true]{Set the zoom to reach a proper sampling rate}\\
+			[name=4] \psframebox[shadow=true]{Adjust the laser output to its minimum}\\
+			[name=5] \psframebox[shadow=true]{Adjust z position}\\
+			[name=6] \psdiabox[fillstyle=solid, fillcolor=lightgray, shadow=true]{\begin{tabular}{c}Surface of the\\slide found ?\end{tabular}}\\\\
+			[name=7]  \psframebox[shadow=true]{Adjust PMT's gain}\\
+			[name=8] \psdiabox[fillstyle=solid, fillcolor=lightgray,shadow=true]{\begin{tabular}{c}Image close\\to saturation ?\end{tabular}}\\\\
+			[name=9] \psframebox[shadow=true]{Set the acquisition averaging to 2-4}\\
+			[name=10] \psframebox[shadow=true]{Acquire the image}\\
+			[name=11] \psframebox[shadow=true]{Generate the report using MetroloJ}\\
+			[name=12] \psovalbox[fillstyle=solid, fillcolor=yellow, shadow=true]{\textbf{End}}
+
+			\ncline{->}{1}{2}
+			\ncline{->}{2}{3}
+			\ncline{->}{3}{4}
+			\ncline{->}{4}{5}
+			\ncline{->}{5}{6}
+			\ncangles[loopsize=1, arm=.5]{->}{6}{5} \aput{:U}{\textbf{No}}
+			\ncline{->}{6}{7}\aput{:U}{\textbf{Yes}}
+			\ncline{->}{7}{8}
+			\ncangles[loopsize=1, arm=.5]{->}{8}{7} \aput{:U}{\textbf{No}}
+			\ncline{->}{8}{9} \aput{:U}{\textbf{Yes}}
+			\ncline{->}{9}{10}
+			\ncline{->}{10}{11}
+			\ncline{->}{11}{12}
+		\end{psmatrix}
+	
+\end{document}
