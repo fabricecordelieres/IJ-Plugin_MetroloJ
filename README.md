@@ -44,7 +44,7 @@ A ***MetroloJ*** entry should appear under the ImageJ's plugins menu. It contain
 ![gcvr-flowImg](img/gcvr-flowImg.jpg)
 
 ## What does it do ?
-1. The plugin measures the average intensity ($\mu$) and the standard deviation ($\sigma$) of the gray levels within a user defined region of interest (ROI) for each image of a stack corresponding to acquisitions made for each PMT to compare.
+1. The plugin measures the average intensity (µ) and the standard deviation ($\sigma$) of the gray levels within a user defined region of interest (ROI) for each image of a stack corresponding to acquisitions made for each PMT to compare.
 2. It calculates the coefficient of variation (CV) as follows:
 $$CV = \frac{\sigma}{\mu}$$
 3. The normalized CV is then calculated as the ratio of the current image's CV over the minimum retrieved CV over all images.
@@ -74,7 +74,7 @@ The CV report is composed of two pages based on the informations provided by the
 * ***ROIs used for measures***: montage composed of the images acquires using each PMT, overlayed with the user defined ROIs used for measurements.
 * ***Microscope infos***: summarizes informations about the acquisition system and the image's calibration.
 * ***Histograms***: plot of the gray level distributions within the user defined ROIs for each image.
-* ***CVs table***: contains for each image the $\mu$ and $\sigma$ values, as well as the ROI size (expressed in number of pixels), the raw and normalized CVs.
+* ***CVs table***: contains for each image the µ and $\sigma$ values, as well as the ROI size (expressed in number of pixels), the raw and normalized CVs.
 * ***Sample infos (optional)***: contains the informations entered by the user in the "Sample infos" section of the interface.
 * ***Comments (optional)***: contains the informations entered by the user in the "Comments" section of the interface.
 
@@ -145,8 +145,8 @@ None...yet.
 
 #### What do I need ?
 * ***Fluorescent beads:*** their outer diameter should be below the resolution of the system to test. Two types of beads might be used:
-	* Mono-labelled beads. ex: Molecular Probes' [PS-Speck, Ref. P-7220](http://probes.invitrogen.com/media/pis/mp07220.pdf). However, their diameter of 0.17$\mu$m is a bit high for high NA objectives...
-	* Multi-labelled beads. ex: Molecular Probes' [TetraSpeck, Ref. T-7279](http://probes.invitrogen.com/media/pis/mp07279.pdf). Their diameter of 0.1$\mu$m is ideal, though having multi-labelled beads may lead to weaker signals...
+	* Mono-labelled beads. ex: Molecular Probes' [PS-Speck, Ref. P-7220](http://probes.invitrogen.com/media/pis/mp07220.pdf). However, their diameter of 0.17µm is a bit high for high NA objectives...
+	* Multi-labelled beads. ex: Molecular Probes' [TetraSpeck, Ref. T-7279](http://probes.invitrogen.com/media/pis/mp07279.pdf). Their diameter of 0.1µm is ideal, though having multi-labelled beads may lead to weaker signals...
 * ***Regular slides***.
 * ***Regular coverslips***: type 1.5 i.e. 0.17mm thick, either polylysine coated or not.
 * If applicable, ***Poly-L-lysine solution*** (0.1 % (w/v) in $H_{2}O$) ex: [Sigma-Aldrich, Ref. P8920](http://www.sigmaaldrich.com/etc/medialib/docs/Sigma/generalinformation2/p8920.Par.0001.File.tmp/p8920.pdf).
@@ -157,13 +157,13 @@ None...yet.
 
 #### How do I do ?
 1. Clean the coverslip and the slide using ethanol.
-2. Dilute the polylysine stock solution to 1/5$^{th}$.
-3. Poor a sufficient amount of the diluted polylysine solution onto the coverslip surface (typically, 200$\mu$l for a 24x24mm coverslip) and leave to coat for 15-30 minutes. The solution hardly covers the full surface, so don't hesitate to use the pipet's tip to force the polylysine into the coverslip's corners.
+2. Dilute the polylysine stock solution to 1/5.
+3. Poor a sufficient amount of the diluted polylysine solution onto the coverslip surface (typically, 200µl for a 24x24mm coverslip) and leave to coat for 15-30 minutes. The solution hardly covers the full surface, so don't hesitate to use the pipet's tip to force the polylysine into the coverslip's corners.
 4. Rince the coverslip 2-3 times in distilled water, then drain off the liquid.
 5. Use a vortex to mix the beads' stock suspension.
 6. Dilute the beads suspension in water. Here are some tips and facts:
-	* Typically, 200$\mu$l for a 24x24mm coverslip will be requiered;
-	* In general, the 0.1$\mu$m [TetraSpeck](http://probes.invitrogen.com/media/pis/mp07279.pdf) should be diluted to 1/1,000, the [PS-Speck](http://probes.invitrogen.com/media/pis/mp07220.pdf) from 1/10,000 to 1/40,000;
+	* Typically, 200µl for a 24x24mm coverslip will be requiered;
+	* In general, the 0.1µm [TetraSpeck](http://probes.invitrogen.com/media/pis/mp07279.pdf) should be diluted to 1/1,000, the [PS-Speck](http://probes.invitrogen.com/media/pis/mp07220.pdf) from 1/10,000 to 1/40,000;
 	* It is advised to first dilute the beads to 1/1,000, then make further  serial dilution to achieve the appropriate beads' density on slide;
 	* Tests should be done to define the appropriate dilution ratio;
 	* Always vortex the suspensions between and after dilutions.
@@ -183,7 +183,7 @@ NB: Other methods exists in order to produce beads slides, involving dilution in
 2. The z slice is set to the z MIPix coordinate. The x profile and y profile are collected along the line passing through the MIPix. The z profile is collected on the XZ view, along the line passing through the MIPix.
 3. All three profiles are fitted to a Gaussian, using the following equation and ImageJ's built-in curve fitting function:
 
-$$y = a + (b-a)*e^{\frac{-(x-c)^{2}}{2*d^{2}}}$$
+$$y=a+(b-a)*e^{\frac{-(x-c)^2}{2*d^2}}$$
 
 4. The resolution i.e. the full-width at half-maximum (FWHM) is calculated as follows for each profile, based on the parameters retrieved from the fitting: 
 
@@ -267,14 +267,18 @@ None...yet.
 ## What does it do ?
 1. After the user has defined a rectangular ROI, the plugin will generate an average intensity projection of the image along the y axis.
 2. The resulting 1D intensity profile is then fitted to a Gaussian, using the following equation and ImageJ's built-in curve fitting function:
-$$y = a + (b-a)*e^{\frac{-(x-c)^{2}}{2*d^{2}}} \label{eqn:garr-gaussian}$$
+
+$$y=a+(b-a)*e^{\frac{-(x-c)^2}{2*d^2}}$$
+
 3. The axial resolution i.e. the full-width at half-maximum (FWHM) is calculated as follows, based on the parameters retrieved from the fitting:
-$$FWHM=2d\sqrt{2ln(2)} \label{eqn:garr-FWHM}$$
+
+$$FWHM=2d\sqrt{2ln(2)}$$
+
 4. The theoretical resolutions are calculated as follows, depending on the microscope's type:
 	
 	$$\begin{aligned}
-            z_{resol, wide-field}=\frac{2*\lambda_{emission}}{NA^2} \label{eqn:garr-zWF}\\
-            z_{resol, confocal}=\frac{1.4*\lambda_{emission}}{NA^2} \label{eqn:garr-zConf}
+            z_{resol, wide-field}=\frac{2*\lambda_{emission}}{NA^2}\\
+            z_{resol, confocal}=\frac{1.4*\lambda_{emission}}{NA^2}
 \end{aligned}$$
 
 ## How to use it ?
@@ -326,7 +330,7 @@ None...yet.
 
 #### What do I need ?
 * ***Fluorescent beads:*** their outer diameter should be well above the resolution of the system to test. Two types of beads might be used:
-	* Uniformly labelled beads. ex: Molecular Probes' [4$\mu$m TetraSpeck, Ref. T-7283](http://probes.invitrogen.com/media/pis/mp07279.pdf). However, their diameter is a bit small for low NA objectives\...
+	* Uniformly labelled beads. ex: Molecular Probes' [4µm TetraSpeck, Ref. T-7283](http://probes.invitrogen.com/media/pis/mp07279.pdf). However, their diameter is a bit small for low NA objectives\...
 	* Non-uniformly labelled beads (inner core carrying one fluorescence, outer ring another). ex: Molecular Probes' [FocalCheck](http://probes.invitrogen.com/media/pis/mp07234.pdf).
 * ***Regular slides***;
 * ***Regular coverslips***: type 1.5 i.e. 0.17mm thick, either polylysine coated or not;
@@ -339,12 +343,12 @@ None...yet.
 #### How do I do ?
 1. Clean the coverslip and the slide using ethanol.
 2. Dilute the polylysine stock solution to 1/5$^{th}$.
-3. Poor a sufficient amount of the diluted polylysine solution onto the coverslip surface (typically, 200$\mu$l for a 24x24mm coverslip) and
+3. Poor a sufficient amount of the diluted polylysine solution onto the coverslip surface (typically, 200µl for a 24x24mm coverslip) and
 leave to coat for 15-30 minutes. The solution hardly covers the full surface, so don't hesitate to use the pipet's tip to force the polylysine into the coverslip's corners.
 4. Rince the coverslip 2-3 times in distilled water, then drain off the liquid.
 5. Use a vortex to mix the beads' stock suspension.
 6. Dilute the beads suspension in water. Here are some tips and facts:
-	* Typically, 200$\mu$l for a 24x24mm coverslip will be requiered;
+	* Typically, 200µl for a 24x24mm coverslip will be requiered;
 	* In general, the beads should not be diluted much from 1/10 to 1/100;
 	* Tests should be done to define the appropriate dilution ratio;
 	* Always vortex the suspensions between and after dilutions;
@@ -352,7 +356,7 @@ leave to coat for 15-30 minutes. The solution hardly covers the full surface, so
 8. Rince the coverslip 2-3 times in distilled water to remove the unattached beads, then drain off the liquid.
 9. Mount the coverslip on the slide by using the mounting medium. In case of non setting media, the coverslip should be sealed onto the slide using nail polish, while avoiding the latter to come under the coverslip.
 
-NB: Other methods exists in order to produce beads slides, involving dilution in ethanol and leaving the suspension to evaporate. In this case, tests of higher beads dilution might be required. Please note that already prepared beads slides are commercially available (see [FocalCheck Fluorescent Microspheres Size Kit mounted on slide, Ref. F-24633 (6$\mu$m beads) and Ref. F-24634 (15$\mu$m beads)](http:// probes.invitrogen.com/media/pis/mp07234.pdf)). However, this kind of preparation doesn't always match with the real *in situ* resolution as the mounting medium might be different from the one used in everyday acquisitions.
+NB: Other methods exists in order to produce beads slides, involving dilution in ethanol and leaving the suspension to evaporate. In this case, tests of higher beads dilution might be required. Please note that already prepared beads slides are commercially available (see [FocalCheck Fluorescent Microspheres Size Kit mounted on slide, Ref. F-24633 (6µm beads) and Ref. F-24634 (15µm beads)](http:// probes.invitrogen.com/media/pis/mp07234.pdf)). However, this kind of preparation doesn't always match with the real *in situ* resolution as the mounting medium might be different from the one used in everyday acquisitions.
 
 ### How to acquire the image ?
 [The following chart](#gcoar-flowImg) summarises the procedure for optimal image acquisition, in order to determine the co-alignement quality on a confocal microscope.
@@ -366,8 +370,7 @@ NB: Other methods exists in order to produce beads slides, involving dilution in
 4. An ellipse is fitted to those pixels (i.e. to the bead's outline), and the coordinates of its centre of mass is determined.
 5. Once all coordinates have been retrieved for each channel, distance between the centre from channel A and centre from channel B is calculated (in fact, all combinaisons of distances are calculated):
 
-$$dist_{A-B}=\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2+(z_{B}-z_{A})^2}
-        \label{eqn:gcoar-dist}$$
+$$dist_{A-B}=\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2+(z_{B}-z_{A})^2}$$
 
 6. For each couple of coordinates, a reference distance $r_{ref}$ is calculated. This distance is quite easy to determine in 2D as it corresponds to the xy resolution: while considering the centre of the structure on image A, a structure of image B will be co-localized if it is present within a circle traced around centre A of a radius equal to the xy resolution. Due to the disparate resolutions over the three dimensions, this distance is not so easy to calculate in 3D. However, the answer might come from the observation of the factor limiting the resolution: the PSF (Point Spread Function) and more precisely the first Airy disc which might be approximated in 3D as having an ovoid shape:
 
@@ -376,10 +379,9 @@ $$dist_{A-B}=\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2+(z_{B}-z_{A})^2}
 Therefore in 3D, the reference distance is calculated by considering a reference point and fitting a 3D ellipse around it for which the two characteristic radii correspond to x/y and z resolutions. In this matter changing from Cartesian coordinates to Polar coordinates make it more easy to calculate the reference distance. The two characteristic angles, the azimuth $\Phi$ and the zenith $\Theta$ (see expressions [\[eqn:gcoar-phi\]](#eqn:gcoar-phi){reference-type="ref" reference="eqn:gcoar-phi"} and [\[eqn:gcoar-theta\]](#eqn:gcoar-theta){reference-type="ref" reference="eqn:gcoar-theta"}) are first calculated, based on the coordinates of the two centres to analyse. Knowing this orientation, as well as the x, y and z resolutions ($res^\circ_{x}$, $res^\circ_{y}$ and $res^\circ_{z}$ respectively), the distance from the reference centre to the border of the ovoid shape **$r_{ref}$** is calculated (see expression [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist){reference-type="ref" reference="eqn:gcoar-refDist"}). The inter-centre distance **$r$** is then compared to this reference distance to assess if co-localization occurs (see previous figure, section C) or not (see previous figure, section B).
 
 $$\begin{aligned}
-        \Phi=\arccos\frac{x_{B}-x_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2}}\label{eqn:gcoar-phi}\\
-        \Theta=\arccos\frac{z_{B}-z_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2+(z_{B}-z_{A})^2}}\label{eqn:gcoar-theta}\\
-        r_{ref}=\sqrt{(res^\circ_{x}\times\sin\Theta\times\cos\Phi )^2+(res^\circ_{y}\times\sin\Theta\times\sin\Phi)^2+(res^\circ_{z}\times\cos\Theta)^2}\label{eqn:gcoar-refDist}
-    
+        \Phi=\arccos\frac{x_{B}-x_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2}}\\
+        \Theta=\arccos\frac{z_{B}-z_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2+(z_{B}-z_{A})^2}}\\
+        r_{ref}=\sqrt{(res^\circ_{x}\times\sin\Theta\times\cos\Phi )^2+(res^\circ_{y}\times\sin\Theta\times\sin\Phi)^2+(res^\circ_{z}\times\cos\Theta)^2}
 \end{aligned}$$
 
 ## How to use it ?
