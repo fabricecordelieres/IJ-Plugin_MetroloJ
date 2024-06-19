@@ -402,8 +402,14 @@ Therefore in 3D, the reference distance is calculated by considering a reference
 $$\begin{aligned}
         \Phi=\arccos\frac{x_{B}-x_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2}}\\
         \Theta=\arccos\frac{z_{B}-z_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2+(z_{B}-z_{A})^2}}\\
-        r_{ref}=\sqrt{(res^\circ_{x}\times\sin\Theta\times\cos\Phi )^2+(res^\circ_{y}\times\sin\Theta\times\sin\Phi)^2+(res^\circ_{z}\times\cos\Theta)^2}
+        \xcancel{r_{ref}=\sqrt{(res^\circ_{x}\times\sin\Theta\times\cos\Phi )^2+(res^\circ_{y}\times\sin\Theta\times\sin\Phi)^2+(res^\circ_{z}\times\cos\Theta)^2}}\\
 \end{aligned}$$
+
+The previous equation is the original equation used in MetroloJ plugin until now. As part of QUAREP-Limi work, John Oreopoulos (Oxford Instrument) raised the issue that the above equation is wrong. Checks were made, and external help was reached for. Although the principle of the method stays the same, the above equation should be replaced by the following one:
+
+
+$$r_{ref}=\frac{resol^\circ_{x}\times resol^\circ_{y}\times resol^\circ_{z}}{\sqrt{(resol^\circ_{y} \times resol^\circ_{z} \times\cos\Phi\times\sin\Theta)^2+(resol^\circ_{x}\times resol^\circ_{z} \times\sin\Phi\times\cos\Theta)^2+(resol^\circ_{x}\times resol^\circ_{y} \times\cos\Theta)^2}}$$
+
 
 ## How to use it ?
 1. Start ImageJ.
