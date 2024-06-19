@@ -1,8 +1,8 @@
 Several documents are available to download. Their source code ($\LaTeX$) is available for the [docs/src/ folder](docs/src).
 
-* [MetroloJ conference paper (ImageJ conference, oct 2010)](docs/10-10-26 Paper MetroloJ - Conf IJ.pdf)
-* [MetroloJ conference presentation (ImageJ conference, oct 2010)](docs/10-10-26 Presentation MetroloJ - Conf IJ.pdf)
-* [PDF version of the manual](docs/MetroloJ Manual v2.pdf)
+* [MetroloJ conference paper (ImageJ conference, oct 2010)](docs/10-10-26_Paper_MetroloJ_-_Conf_IJ.pdf)
+* [MetroloJ conference presentation (ImageJ conference, oct 2010)](docs/10-10-26_Presentation_MetroloJ_-_Conf_IJ.pdf)
+* [PDF version of the manual](docs/MetroloJ_Manual_v2.pdf)
 
 
 
