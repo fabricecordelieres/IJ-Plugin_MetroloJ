@@ -38,8 +38,7 @@ A ***MetroloJ*** entry should appear under the ImageJ's plugins menu. It contain
 
 #### What do I need ?
 * ***Fluorescent slides:*** made of fluorescent plastic, the fluorescent slide provides the user with a uniformly labelled sample. They might be ordered from [Omega Opticals](https://www.omegafilters.com/index.php?page=prod_rslides_pro) or [Microscopy Education](http://www.microscopyeducation.com/fluorrefslides.html).
-* ***Alternatively***, large diameter uniformly labelled beads might also be used and prepared as explained under the "Generate co-alignement
-report" section ([6.1.1.1](#sec:gcoar-proto-what){reference-type="ref" reference="sec:gcoar-proto-what"}).
+* ***Alternatively***, large diameter uniformly labelled beads might also be used and prepared as explained under the "Generate co-alignement report" section ([6.1.1.1](#sec:gcoar-proto-what){reference-type="ref" reference="sec:gcoar-proto-what"}).
 
 ### How to acquire the image ?
 [The following chart](#gcvr-flowImg) summarizes the procedure for optimal image acquisition, in order to determine the CV of several PMTs on a confocal microscope.
@@ -48,7 +47,7 @@ report" section ([6.1.1.1](#sec:gcoar-proto-what){reference-type="ref" reference
 ## What does it do ?
 1. The plugin measures the average intensity ($\mu$) and the standard deviation ($\sigma$) of the gray levels within a user defined region of interest (ROI) for each image of a stack corresponding to acquisitions made for each PMT to compare.
 2. It calculates the coefficient of variation (CV) as follows:
-$$CV = \frac{\sigma}{\mu} \label{eqn:gcvr-CV}$$
+$$CV = \frac{\sigma}{\mu}$$
 3. The normalized CV is then calculated as the ratio of the current image's CV over the minimum retrieved CV over all images.
 
 ## How to use it ?
@@ -56,20 +55,19 @@ $$CV = \frac{\sigma}{\mu} \label{eqn:gcvr-CV}$$
 2. Open a stack of images containing the acquisitions made with the PMTs to analyze.
 3. Launch the plugin by going to Plugins/MetroloJ/Generate CV report.
 4. In case the image has not been spatially calibrated, a message error pops up: click on Ok. In the calibration dialog box provide the appropriate values, then re-launch the plugin.
-5. The plugin's interface should appear (see fig.[\[fig:gcvr-interf\]](#fig:gcvr-interf){reference-type="ref" reference="fig:gcvr-interf"});
-6. Choose the microscope's type, enter the emission wavelength, the numerical aperture of the objective and the pinhole aperture. Sample
-informations and some comments might also be provided using the appropriate boxes. Ticking the "Save image/plots/data" will generate:
+5. The plugin's interface should appear:
+![gcvr-interf](img/gcvr-interf.jpg)
+6. Choose the microscope's type, enter the emission wavelength, the numerical aperture of the objective and the pinhole aperture. Sample informations and some comments might also be provided using the appropriate boxes. Ticking the "Save image/plots/data" will generate:
 	* a jpeg panel containing all the analyzed images overlayed with the user defined ROIs;
 	* a jpeg image of the intensity distribution (histogram) for each image, within the user defined ROIs;
 	* a zip file containing the user defined ROIs;
 	* two files containing tabulation separated values of the histograms, and for the data used to calculate the raw and normalized CVs (excel files);
-7. Click on Ok: a new dialog box appears, inviting the user to choose a folder where all data will be saved.
-8. The pdf report is generated, and appropriate files saved.
+8. Click on Ok: a new dialog box appears, inviting the user to choose a folder where all data will be saved.
+9. The pdf report is generated, and appropriate files saved.
 
 ## What's on the report ?
-The CV report is composed of two pages (see an example of report on fig. [\[fig:gcvr-report\]](#fig:gcvr-report){reference-type="ref"
-reference="fig:gcvr-report"}) based on the informations provided by the user. It is composed of up to 6 sections:
-
+The CV report is composed of two pages based on the informations provided by the user. It is composed of up to 6 sections:
+![gcvr-report](img/gcvr-report.jpg)
 * ***ROIs used for measures***: montage composed of the images acquires using each PMT, overlayed with the user defined ROIs used for measurements.
 * ***Microscope infos***: summarizes informations about the acquisition system and the image's calibration.
 * ***Histograms***: plot of the gray level distributions within the user defined ROIs for each image.
@@ -106,10 +104,9 @@ None...yet.
 2. Open an image containing the field illumination to analyze.
 3. Launch the plugin by going to Plugins/MetroloJ/Generate field illumination report
 4. In case the image has not been spatially calibrated, a message error pops up: click on Ok. In the calibration dialog box provide the appropriate values, then re-launch the plugin.
-5. The plugin's interface should appear (see fig. [\[fig:gfir-interf\]](#fig:gfir-interf){reference-type="ref" reference="fig:gfir-interf"});
+5. The plugin's interface should appear:
 ![image](img/gfir-interf.jpg)
-6. Choose the microscope's type, enter the emission wavelength, the numerical aperture of the objective and the pinhole aperture. Sample
-informations and some comments might also be provided using the appropriate boxes. Ticking the "Save image/plots/data" will generate:
+6. Choose the microscope's type, enter the emission wavelength, the numerical aperture of the objective and the pinhole aperture. Sample informations and some comments might also be provided using the appropriate boxes. Ticking the "Save image/plots/data" will generate:
 	* a jpeg image of the illumination pattern;
 	* a jpeg image of the intensity profiles;
 	* two files containing tabulation separated values of the intensity profiles, and for the profiles associated statistics (excel files);
@@ -117,7 +114,7 @@ informations and some comments might also be provided using the appropriate boxe
 8. The pdf report is generated, and appropriate files saved.
 
 ## What's on the report ?
-The field illumination report is composed of two pages (see an example of report on fig. [\[fig:gfir-report\]](#fig:gfir-report){reference-type="ref" reference="fig:gfir-report"}) based on the informations provided by the user. It is composed of up to 6 sections:
+The field illumination report is composed of two pages based on the informations provided by the user. It is composed of up to 6 sections:
 ![image](img/gfir-report.jpg)
    
 * ***Normalized intensity profile***: normalized view of the field illumination, in false color, separated into iso-intensity zones which
@@ -141,8 +138,8 @@ None...yet.
 
 #### What do I need ?
 * ***Fluorescent beads:*** their outer diameter should be below the resolution of the system to test. Two types of beads might be used:
-* Mono-labelled beads. ex: Molecular Probes' [PS-Speck, Ref. P-7220](http://probes.invitrogen.com/media/pis/mp07220.pdf). However, their diameter of 0.17$\mu$m is a bit high for high NA objectives...
-* Multi-labelled beads. ex: Molecular Probes' [TetraSpeck, Ref. T-7279](http://probes.invitrogen.com/media/pis/mp07279.pdf). Their diameter of 0.1$\mu$m is ideal, though having multi-labelled beads may lead to weaker signals...
+	* Mono-labelled beads. ex: Molecular Probes' [PS-Speck, Ref. P-7220](http://probes.invitrogen.com/media/pis/mp07220.pdf). However, their diameter of 0.17$\mu$m is a bit high for high NA objectives...
+	* Multi-labelled beads. ex: Molecular Probes' [TetraSpeck, Ref. T-7279](http://probes.invitrogen.com/media/pis/mp07279.pdf). Their diameter of 0.1$\mu$m is ideal, though having multi-labelled beads may lead to weaker signals...
 * ***Regular slides***.
 * ***Regular coverslips***: type 1.5 i.e. 0.17mm thick, either polylysine coated or not.
 * If applicable, ***Poly-L-lysine solution*** (0.1 % (w/v) in $H_{2}O$) ex: [Sigma-Aldrich, Ref. P8920](http://www.sigmaaldrich.com/etc/medialib/docs/Sigma/generalinformation2/p8920.Par.0001.File.tmp/p8920.pdf).
@@ -154,28 +151,20 @@ None...yet.
 #### How do I do ?
 1. Clean the coverslip and the slide using ethanol.
 2. Dilute the polylysine stock solution to 1/5$^{th}$.
-3. Poor a sufficient amount of the diluted polylysine solution onto the coverslip surface (typically, 200$\mu$l for a 24x24mm coverslip) and
-leave to coat for 15-30 minutes. The solution hardly covers the full surface, so don't hesitate to use the pipet's tip to force the
-polylysine into the coverslip's corners.
+3. Poor a sufficient amount of the diluted polylysine solution onto the coverslip surface (typically, 200$\mu$l for a 24x24mm coverslip) and leave to coat for 15-30 minutes. The solution hardly covers the full surface, so don't hesitate to use the pipet's tip to force the polylysine into the coverslip's corners.
 4. Rince the coverslip 2-3 times in distilled water, then drain off the liquid.
 5. Use a vortex to mix the beads' stock suspension.
 6. Dilute the beads suspension in water. Here are some tips and facts:
 	* Typically, 200$\mu$l for a 24x24mm coverslip will be requiered;
-	* In general, the 0.1$\mu$m [TetraSpeck](http://probes.invitrogen.com/media/pis/mp07279.pdf) should be diluted to 1/1,000, the
-[PS-Speck](http://probes.invitrogen.com/media/pis/mp07220.pdf) from 1/10,000 to 1/40,000;
+	* In general, the 0.1$\mu$m [TetraSpeck](http://probes.invitrogen.com/media/pis/mp07279.pdf) should be diluted to 1/1,000, the [PS-Speck](http://probes.invitrogen.com/media/pis/mp07220.pdf) from 1/10,000 to 1/40,000;
 	* It is advised to first dilute the beads to 1/1,000, then make further  serial dilution to achieve the appropriate beads' density on slide;
 	* Tests should be done to define the appropriate dilution ratio;
 	* Always vortex the suspensions between and after dilutions.
-7. Poor a sufficient amount of the diluted beads suspension onto the coverslip surface and leave to sediment for at least 30 minutes. The
-solution hardly covers the full surface, so don't hesitate to use the pipet's tip to force the suspension into the coverslip's corners.
+7. Poor a sufficient amount of the diluted beads suspension onto the coverslip surface and leave to sediment for at least 30 minutes. The solution hardly covers the full surface, so don't hesitate to use the pipet's tip to force the suspension into the coverslip's corners.
 8. Rince the coverslip 2-3 times in distilled water to remove the unattached beads, then drain off the liquid.
-9. Mount the coverslip on the slide by using the mounting medium. In case of non setting media, the coverslip should be sealed onto the slide
-using nail polish, while avoiding the latter to come under the coverslip.
+9. Mount the coverslip on the slide by using the mounting medium. In case of non setting media, the coverslip should be sealed onto the slide using nail polish, while avoiding the latter to come under the coverslip.
 
-NB: Other methods exists in order to produce beads slides, involving dilution in ethanol and leaving the suspension to evaporate. In this
-case, tests of higher beads dilution might be required. Please note that already prepared beads slides are commercially available (see [TetraSpeck Fluorescent Microspheres Size Kit mounted on slide](http://probes.invitrogen.com/media/pis/mp07279.pdf)). However,
-this kind of preparation doesn't always match with the real *in situ* resolution as the mounting medium might be different from the one used
-in everyday acquisitions.
+NB: Other methods exists in order to produce beads slides, involving dilution in ethanol and leaving the suspension to evaporate. In this case, tests of higher beads dilution might be required. Please note that already prepared beads slides are commercially available (see [TetraSpeck Fluorescent Microspheres Size Kit mounted on slide](http://probes.invitrogen.com/media/pis/mp07279.pdf)). However, this kind of preparation doesn't always match with the real *in situ* resolution as the mounting medium might be different from the one used in everyday acquisitions.
 
 ### How to acquire the image ?
 [The following chart](#gpr-flowImg) summarises the procedure for optimal image acquisition, in order to determine the resolutions on a confocal microscope.
