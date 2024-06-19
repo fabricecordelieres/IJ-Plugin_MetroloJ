@@ -1,0 +1,29 @@
+\begin{thebibliography}{1}
+
+\bibitem{Zucker2006}
+R.~Zucker, ``{Quality assessment of confocal microscopy slide based systems:
+  Performance},'' {\em Cytometry Part A}~{\bf 69}(7), p.~659, 2006.
+
+\bibitem{Zucker1999}
+R.~Zucker and O.~Price, ``{Practical confocal microscopy and the evaluation of
+  system performance},'' {\em Methods}~{\bf 18}(4), pp.~447--458, 1999.
+
+\bibitem{Castaneda1994}
+R.~Castaneda, ``{Two-dimensional evaluation of point spread functions using
+  centred reduced moments},'' {\em Pure Appl. Opt.}~{\bf 3}, pp.~737--755,
+  1994.
+
+\bibitem{Mahajan1994}
+V.~N. Mahajan, ``{Zernike Circle Polynomials and Optical Aberrations of Systems
+  with Circular Pupils},'' {\em Applied Optics}~{\bf 33}, p.~8121, Dec. 1994.
+
+\bibitem{Zucker2004}
+R.~Zucker, ``{Confocal Microscopy System Performance : Axial Resolution},''
+  {\em Microscopy Today}~{\bf 12}(1), pp.~38--40, 2004.
+
+\bibitem{Cordelieres2008}
+F.~P. Cordeli\`{e}res and S.~Bolte, ``{JACoP v2.0 : improving the user
+  experience with co-localization studies},'' in {\em ImageJ User \& Developer
+  Conference},  pp.~174--181, 2008.
+
+\end{thebibliography}

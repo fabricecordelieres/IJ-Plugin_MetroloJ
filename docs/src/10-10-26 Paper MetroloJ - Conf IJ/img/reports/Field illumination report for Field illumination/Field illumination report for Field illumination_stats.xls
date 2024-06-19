@@ -1,0 +1,15 @@
+	Image centre	Centre of intensity	Centre of the max intensity	Centre of the 100% zone
+Coordinates	(256.0, 256.0)	(274.366, 270.451)	(263.0, 441.0)	(338.799, 309.725)
+Distance to image centre		23.369µm	185.132µm	98.702µm
+
+Location	Intensity	Intensity relative to max
+Maximum found at (263,441)	255	1.0
+Maximum found at (263,441)	255	1.0
+Top-left corner	39	0.15294117647058825
+Top-right corner	175	0.6862745098039216
+Bottom-left corner	175	0.6862745098039216
+Bottom-right corner	177	0.6941176470588235
+Upper bound, middle pixel	182	0.7137254901960784
+Lower bound, middle pixel	230	0.9019607843137255
+Left bound, middle pixel	131	0.5137254901960784
+Right bound, middle pixel	224	0.8784313725490196
