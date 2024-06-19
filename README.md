@@ -1,3 +1,7 @@
+<h1 align="center">MetroloJ plugin: WARNING</h1>
+A bug has been found in the way the reference distance was computed for co-alignement analysis. The bug is now corrected. This repository contains the explanations together with a new version of the plugin including the correct way to do the calculations.
+
+
 <h1 align="center">MetroloJ plugin: supporting documents</h1>
 
 Several documents are available to download. Their source code ($\LaTeX$) is available for the [docs/src/ folder](docs/src).
@@ -12,9 +16,9 @@ Several documents are available to download. Their source code ($\LaTeX$) is ava
 
 <h1 align="center">MetroloJ plugin: the manual</h1>
 
-<p align="center"><img src="img/logo_RT-MFM.jpg" width="200">                <img src="img/logo_mrct.jpg" width="200"></p>
+<p align="center"><img src="img/LogoRT-MFM_fond_transparent.png" width="200">                <img src="img/logo_mrct.jpg" width="200"></p>
 
-*This manual and plugin comes as a result of a collective work of the "Metrology group" within the [French Technological Network of the Multi-Dimensional Fluorescence Microscopies (RT-MFM)](http://rtmfm.ibl.fr/), supported by the ["Mission Ressources et Compétences Technologiques" (MRCT)](http://www.mrct.cnrs.fr/).
+*This manual and plugin comes as a result of a collective work of the "Metrology group" within the [French Technological Network of the Multi-Dimensional Fluorescence Microscopies (RT-MFM)](http://rtmfm.cnrs.fr/), supported by the ["Mission pour les Initiatives Transverses et Interdisciplinaires" (MITI)](https://miti.cnrs.fr/)).
 The authors would like to thank:
 Aurélie Le Ru for reporting the time-shift bug.
 François Waharte for beta-testing and bug tracking.
