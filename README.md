@@ -5,9 +5,7 @@
 The authors would like to thank:
 Aurélie Le Ru for reporting the time-shift bug.
 François Waharte for beta-testing and bug tracking.
-Claude-Marie Bachelet and Aurélien Dauphin for the images used in fig.
-[\[fig:gcoar-report\]](#fig:gcoar-report){reference-type="ref"
-reference="fig:gcoar-report"}
+Claude-Marie Bachelet and Aurélien Dauphin for the images used in fig. ["Co-alignement report"](#gcoar-report)
 Aude Jobart for images of spinning disc PSFs*
 
 *We would like to acknowledge the work of all the valuable beta-tester
@@ -38,10 +36,11 @@ A ***MetroloJ*** entry should appear under the ImageJ's plugins menu. It contain
 
 #### What do I need ?
 * ***Fluorescent slides:*** made of fluorescent plastic, the fluorescent slide provides the user with a uniformly labelled sample. They might be ordered from [Omega Opticals](https://www.omegafilters.com/index.php?page=prod_rslides_pro) or [Microscopy Education](http://www.microscopyeducation.com/fluorrefslides.html).
-* ***Alternatively***, large diameter uniformly labelled beads might also be used and prepared as explained under the "Generate co-alignement report" section ([6.1.1.1](#sec:gcoar-proto-what){reference-type="ref" reference="sec:gcoar-proto-what"}).
+* ***Alternatively***, large diameter uniformly labelled beads might also be used and prepared as explained under the ["Generate co-alignement report" section](#what-does-it-do--4).
 
 ### How to acquire the image ?
 [The following chart](#gcvr-flowImg) summarizes the procedure for optimal image acquisition, in order to determine the CV of several PMTs on a confocal microscope.
+
 ![gcvr-flowImg](img/gcvr-flowImg.jpg)
 
 ## What does it do ?
@@ -56,7 +55,9 @@ $$CV = \frac{\sigma}{\mu}$$
 3. Launch the plugin by going to Plugins/MetroloJ/Generate CV report.
 4. In case the image has not been spatially calibrated, a message error pops up: click on Ok. In the calibration dialog box provide the appropriate values, then re-launch the plugin.
 5. The plugin's interface should appear:
+
 ![gcvr-interf](img/gcvr-interf.jpg)
+
 6. Choose the microscope's type, enter the emission wavelength, the numerical aperture of the objective and the pinhole aperture. Sample informations and some comments might also be provided using the appropriate boxes. Ticking the "Save image/plots/data" will generate:
 	* a jpeg panel containing all the analyzed images overlayed with the user defined ROIs;
 	* a jpeg image of the intensity distribution (histogram) for each image, within the user defined ROIs;
@@ -67,7 +68,9 @@ $$CV = \frac{\sigma}{\mu}$$
 
 ## What's on the report ?
 The CV report is composed of two pages based on the informations provided by the user. It is composed of up to 6 sections:
+
 ![gcvr-report](img/gcvr-report.jpg)
+
 * ***ROIs used for measures***: montage composed of the images acquires using each PMT, overlayed with the user defined ROIs used for measurements.
 * ***Microscope infos***: summarizes informations about the acquisition system and the image's calibration.
 * ***Histograms***: plot of the gray level distributions within the user defined ROIs for each image.
@@ -91,6 +94,7 @@ None...yet.
 
 ### How to acquire the image ?
 [The following chart](#gfir-flowImg) summarises the procedure for optimal image acquisition, in order to determine field illumination homogeneity on a confocal microscope.
+
 ![gfir-flowImg](img/gfir-flowImg.jpg)
 
 ## What does it do ?
@@ -105,7 +109,9 @@ None...yet.
 3. Launch the plugin by going to Plugins/MetroloJ/Generate field illumination report
 4. In case the image has not been spatially calibrated, a message error pops up: click on Ok. In the calibration dialog box provide the appropriate values, then re-launch the plugin.
 5. The plugin's interface should appear:
+
 ![image](img/gfir-interf.jpg)
+
 6. Choose the microscope's type, enter the emission wavelength, the numerical aperture of the objective and the pinhole aperture. Sample informations and some comments might also be provided using the appropriate boxes. Ticking the "Save image/plots/data" will generate:
 	* a jpeg image of the illumination pattern;
 	* a jpeg image of the intensity profiles;
@@ -115,6 +121,7 @@ None...yet.
 
 ## What's on the report ?
 The field illumination report is composed of two pages based on the informations provided by the user. It is composed of up to 6 sections:
+
 ![image](img/gfir-report.jpg)
    
 * ***Normalized intensity profile***: normalized view of the field illumination, in false color, separated into iso-intensity zones which
@@ -168,6 +175,7 @@ NB: Other methods exists in order to produce beads slides, involving dilution in
 
 ### How to acquire the image ?
 [The following chart](#gpr-flowImg) summarises the procedure for optimal image acquisition, in order to determine the resolutions on a confocal microscope.
+
 ![gpr-flowImg](img/gpr-flowImg.jpg)
 
 ## What does it do ?
@@ -179,21 +187,15 @@ $$y = a + (b-a)*e^{\frac{-(x-c)^{2}}{2*d^{2}}}$$
 
 4. The resolution i.e. the full-width at half-maximum (FWHM) is calculated as follows for each profile, based on the parameters retrieved from the fitting: 
 
-$$FWHM=2d\sqrt{2ln(2)}
-        \label{eqn:gpr-FWHM}$$
+$$FWHM=2d\sqrt{2ln(2)}$$
 
 5. The theoretical resolutions are calculated as follows, depending on the microscope's type: 
 
 $$\begin{aligned}
-            xy_{resol, wide-field}=\frac{0.61*\lambda_{emission}}{NA}
-            \label{eqn:gpr-xyWF}\\
-            z_{resol, wide-field}=\frac{2*\lambda_{emission}}{NA^2}
-            \label{eqn:gpr-zWF}\\
-            xy_{resol, confocal}=\frac{0.4*\lambda_{emission}}{NA}
-            \label{eqn:gpr-xyConf}\\
+            xy_{resol, wide-field}=\frac{0.61*\lambda_{emission}}{NA}\\
+            z_{resol, wide-field}=\frac{2*\lambda_{emission}}{NA^2}\\
+            xy_{resol, confocal}=\frac{0.4*\lambda_{emission}}{NA}\\
             z_{resol, confocal}=\frac{1.4*\lambda_{emission}}{NA^2}
-            \label{eqn:gpr-zConf}
-        
 \end{aligned}$$
 
 ## How to use it ?
@@ -202,7 +204,9 @@ $$\begin{aligned}
 3. Launch the plugin by going to Plugins/MetroloJ/Generate PSF report.
 4. In case the stack has not been spatially calibrated, a message error pops up: click on Ok. In the calibration dialog box provide the appropriate values, then re-launch the plugin.
 5. The plugin's interface should appear:
+
 ![gpr-interf](img/gpr-interf.jpg)
+
 6. Choose the microscope's type, enter the emission wavelength, the numerical aperture of the objective and the pinhole aperture. Sample informations and some comments might also be provided using the appropriate boxes. Ticking the "Save image/plots/data" will generate:
 	* a jpeg image of the side-views;
 	* three files containing tabulation separated values of the x, y and z profiles (excel files);
@@ -212,7 +216,9 @@ $$\begin{aligned}
 
 ## What's on the report ?
 The PSF report is composed of two to three pages depending on the informations provided by the user. It is composed of up to 8 sections:
+
 ![gpr-report](img/gpr-report.jpg)
+
 * ***Profile view***: image composed of three maximum intensity projections, XY, XZ and YZ;
 * ***Microscope infos***: summarizes informations about the acquisition system and the image's calibration;
 * ***Resolution table***: carries both the resolutions determined by fitting and the theoretical, calculated ones;
@@ -255,6 +261,7 @@ None...yet.
 
 ### How to acquire the image ?
 [The following chart](#garr-flowImg) summarises the procedure for optimal image acquisition, in order to determine the axial resolution on a confocal microscope.
+
 ![garr-flowImg](img/garr-flowImg.jpg)
 
 ## What does it do ?
@@ -276,7 +283,9 @@ $$FWHM=2d\sqrt{2ln(2)} \label{eqn:garr-FWHM}$$
 3. Launch the plugin by going to Plugins/MetroloJ/Generate axial resolution report.
 4. In case the image has not been spatially calibrated, a message error pops up: click on Ok. In the calibration dialog box provide the appropriate values, then re-launch the plugin.
 5. The plugin's interface should appear:
+
 ![garr-interf](img/garr-interf.jpg)
+
 6. Select the position of the ROI and adjust its width.
 7. Choose the microscope's type, enter the emission wavelength, the numerical aperture of the objective and the pinhole aperture. Sample
 informations and some comments might also be provided using the appropriate boxes. Ticking the "Save image/plots/data" will generate:
@@ -288,7 +297,9 @@ informations and some comments might also be provided using the appropriate boxe
 
 ## What's on the report ?
 The axial resolution report is composed of two pages. It is composed of up to 6 sections:
+
 ![garr-report](img/garr-report.jpg)
+
 * ***Profile view***: a calibrated image of the profile, including the ROI's outlines;
 * ***Microscope infos***: summarizes informations about the acquisition system and the image's calibration;
 * ***Resolution table***: carries both the ROI's position, as well as axial resolutions (experimental and theoretical);
@@ -345,6 +356,7 @@ NB: Other methods exists in order to produce beads slides, involving dilution in
 
 ### How to acquire the image ?
 [The following chart](#gcoar-flowImg) summarises the procedure for optimal image acquisition, in order to determine the co-alignement quality on a confocal microscope.
+
 ![gcoar-flowImg](img/gcoar-flowImg.jpg)
 
 ## What does it do ?
@@ -358,6 +370,7 @@ $$dist_{A-B}=\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2+(z_{B}-z_{A})^2}
         \label{eqn:gcoar-dist}$$
 
 6. For each couple of coordinates, a reference distance $r_{ref}$ is calculated. This distance is quite easy to determine in 2D as it corresponds to the xy resolution: while considering the centre of the structure on image A, a structure of image B will be co-localized if it is present within a circle traced around centre A of a radius equal to the xy resolution. Due to the disparate resolutions over the three dimensions, this distance is not so easy to calculate in 3D. However, the answer might come from the observation of the factor limiting the resolution: the PSF (Point Spread Function) and more precisely the first Airy disc which might be approximated in 3D as having an ovoid shape:
+
 ![gcoar-dist](img/gcoar-dist.jpg)
    
 Therefore in 3D, the reference distance is calculated by considering a reference point and fitting a 3D ellipse around it for which the two characteristic radii correspond to x/y and z resolutions. In this matter changing from Cartesian coordinates to Polar coordinates make it more easy to calculate the reference distance. The two characteristic angles, the azimuth $\Phi$ and the zenith $\Theta$ (see expressions [\[eqn:gcoar-phi\]](#eqn:gcoar-phi){reference-type="ref" reference="eqn:gcoar-phi"} and [\[eqn:gcoar-theta\]](#eqn:gcoar-theta){reference-type="ref" reference="eqn:gcoar-theta"}) are first calculated, based on the coordinates of the two centres to analyse. Knowing this orientation, as well as the x, y and z resolutions ($res^\circ_{x}$, $res^\circ_{y}$ and $res^\circ_{z}$ respectively), the distance from the reference centre to the border of the ovoid shape **$r_{ref}$** is calculated (see expression [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist){reference-type="ref" reference="eqn:gcoar-refDist"}). The inter-centre distance **$r$** is then compared to this reference distance to assess if co-localization occurs (see previous figure, section C) or not (see previous figure, section B).
@@ -374,7 +387,9 @@ $$\begin{aligned}
 2. Open two or three stacks containing exactly one bead.
 3. Launch the plugin by going to Plugins/MetroloJ/Generate co-alignement report.
 4. The plugin's interface should appear:
-![gcoar-interf](img/gcoar-interf.jpg) 
+
+![gcoar-interf](img/gcoar-interf.jpg)
+
 5. Enter a title for the report, choose which stack should be used for analysis (under "Stack 3", "none" might also be used), the microscope's type, enter the emission wavelength for each stack, the numerical aperture of the objective and the pinhole aperture. Sample informations and some comments might also be provided using the appropriate boxes. Ticking the "Save image/plots/data" will generate:
 	* a jpeg image of the side-views;
 	* a file containing tabulation separated values of all the numerical data from the report.
@@ -384,7 +399,9 @@ $$\begin{aligned}
 
 ## What's on the report ?
 The co-alignement report is composed of two to three pages depending on the informations provided by the user. It is composed of up to 7 sections:
+
 ![gcoar-report](img/gcoar-report.jpg)
+
 * ***Profile view***: image composed of three maximum intensity projections, XY, XZ and YZ;
 * ***Microscope infos***: summarizes informations about the acquisition system and the image's calibration;
 * ***Pixel shift table***: considering as a reference the channel stated at the beginning of each row, each column show how much pixels separate one channel from the reference along x, y and z axis. This information might be useful to compensate for chromatic aberration using image processing softwares. On each row, resolutions and centre's coordinates are given for the reference channel;
