@@ -1,12 +1,16 @@
+<h1 align="center">MetroloJ plugin: supporting documents</h1>
+
 Several documents are available to download. Their source code ($\LaTeX$) is available for the [docs/src/ folder](docs/src).
 
 * [MetroloJ conference paper (ImageJ conference, oct 2010)](docs/10-10-26_Paper_MetroloJ_-_Conf_IJ.pdf)
 * [MetroloJ conference presentation (ImageJ conference, oct 2010)](docs/10-10-26_Presentation_MetroloJ_-_Conf_IJ.pdf)
+* [JACoP conference paper (ImageJ conference, nov 2008)](docs/JACoP_v2_0__improving_the_user_experience_with_co_localization_studies.pdf), explaining how the reference distance is calculated in 3D
 * [PDF version of the manual](docs/MetroloJ_Manual_v2.pdf)
 
+---
+---
 
-
-
+<h1 align="center">MetroloJ plugin: the manual</h1>
 
 <p align="center"><img src="img/logo_RT-MFM.jpg" width="200">                <img src="img/logo_mrct.jpg" width="200"></p>
 
