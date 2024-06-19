@@ -1,3 +1,13 @@
+Several documents are available to download. Their source code ($\LaTeX$) is available for the [docs/src/ folder](docs/src).
+
+* [MetroloJ conference paper (ImageJ conference, oct 2010)](docs/10-10-26 Paper MetroloJ - Conf IJ.pdf)
+* [MetroloJ conference presentation (ImageJ conference, oct 2010)](docs/10-10-26 Presentation MetroloJ - Conf IJ.pdf)
+* [PDF version of the manual](docs/MetroloJ Manual v2.pdf)
+
+
+
+
+
 <p align="center"><img src="img/logo_RT-MFM.jpg" width="200">                <img src="img/logo_mrct.jpg" width="200"></p>
 
 *This manual and plugin comes as a result of a collective work of the "Metrology group" within the [French Technological Network of the Multi-Dimensional Fluorescence Microscopies (RT-MFM)](http://rtmfm.ibl.fr/), supported by the ["Mission Ressources et Compétences Technologiques" (MRCT)](http://www.mrct.cnrs.fr/).
