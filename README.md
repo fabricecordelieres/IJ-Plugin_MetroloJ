@@ -183,7 +183,7 @@ NB: Other methods exists in order to produce beads slides, involving dilution in
 2. The z slice is set to the z MIPix coordinate. The x profile and y profile are collected along the line passing through the MIPix. The z profile is collected on the XZ view, along the line passing through the MIPix.
 3. All three profiles are fitted to a Gaussian, using the following equation and ImageJ's built-in curve fitting function:
 
-$$y=a+(b-a)*e^{\frac{-(x-c)^2}{2*d^2}}$$
+$$y = a + (b-a)e^\frac{-(x-c)^2}{2d^2}$$
 
 4. The resolution i.e. the full-width at half-maximum (FWHM) is calculated as follows for each profile, based on the parameters retrieved from the fitting: 
 
@@ -268,7 +268,7 @@ None...yet.
 1. After the user has defined a rectangular ROI, the plugin will generate an average intensity projection of the image along the y axis.
 2. The resulting 1D intensity profile is then fitted to a Gaussian, using the following equation and ImageJ's built-in curve fitting function:
 
-$$y=a+(b-a)*e^{\frac{-(x-c)^2}{2*d^2}}$$
+$$y = a + (b-a)e^\frac{-(x-c)^2}{2d^2}$$
 
 3. The axial resolution i.e. the full-width at half-maximum (FWHM) is calculated as follows, based on the parameters retrieved from the fitting:
 
@@ -276,9 +276,9 @@ $$FWHM=2d\sqrt{2ln(2)}$$
 
 4. The theoretical resolutions are calculated as follows, depending on the microscope's type:
 	
-	$$\begin{aligned}
-            z_{resol, wide-field}=\frac{2*\lambda_{emission}}{NA^2}\\
-            z_{resol, confocal}=\frac{1.4*\lambda_{emission}}{NA^2}
+$$\begin{aligned}
+	z_{resol, wide-field}=\frac{2*\lambda_{emission}}{NA^2}\\
+	z_{resol, confocal}=\frac{1.4*\lambda_{emission}}{NA^2}
 \end{aligned}$$
 
 ## How to use it ?
