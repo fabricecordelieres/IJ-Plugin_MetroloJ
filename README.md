@@ -16,7 +16,7 @@ Several documents are available to download. Their source code ($\LaTeX$) is ava
 
 <h1 align="center">MetroloJ plugin: the manual</h1>
 
-<p align="center"><img src="img/LogoRT-MFM_fond_transparent.png" width="200">                <img src="img/logo_mrct.jpg" width="200"></p>
+<p align="center"><img src="img/LogoRT-MFM_fond_transparent.png" width="256"></p>
 
 *This manual and plugin comes as a result of a collective work of the "Metrology group" within the [French Technological Network of the Multi-Dimensional Fluorescence Microscopies (RT-MFM)](http://rtmfm.cnrs.fr/), supported by the ["Mission pour les Initiatives Transverses et Interdisciplinaires" (MITI)](https://miti.cnrs.fr/)).
 The authors would like to thank:
