@@ -42,7 +42,7 @@ A ***MetroloJ*** entry should appear under the ImageJ's plugins menu. It contain
 report" section ([6.1.1.1](#sec:gcoar-proto-what){reference-type="ref" reference="sec:gcoar-proto-what"}).
 
 ### How to acquire the image ?
-The following chart ([this flow chart](#gcvr-flowImg) summarizes the procedure for optimal image acquisition, in order to determine the CV of several PMTs on a confocal microscope.
+[The following chart](#gcvr-flowImg) summarizes the procedure for optimal image acquisition, in order to determine the CV of several PMTs on a confocal microscope.
 ![gcvr-flowImg](img/gcvr-flowImg.jpg)
 
 ## What does it do ?
@@ -92,7 +92,8 @@ None...yet.
 * ***Fluorescent slides:*** made of fluorescent plastic, the fluorescent slide provides the user with a uniformly labelled sample. They might be ordered from [Omega Opticals](https://www.omegafilters.com/index.php?page=prod_rslides_pro) or [Microscopy Education](http://www.microscopyeducation.com/fluorrefslides.html).
 
 ### How to acquire the image ?
-The following chart (see fig. [\[fig:gfir-flowImg\]](#fig:gfir-flowImg){reference-type="ref" reference="fig:gfir-flowImg"}) summarises the procedure for optimal image acquisition, in order to determine field illumination homogeneity on a confocal microscope.
+[The following chart](#gfir-flowImg) summarises the procedure for optimal image acquisition, in order to determine field illumination homogeneity on a confocal microscope.
+![gfir-flowImg](img/gfir-flowImg.jpg)
 
 ## What does it do ?
 1. The plugin generates a normalized view of the image. Its maximum intensity pixel being set to 100%, an iso-intensity map is drawn, the intensity step between two successive areas being set by user.
@@ -106,7 +107,7 @@ The following chart (see fig. [\[fig:gfir-flowImg\]](#fig:gfir-flowImg){referenc
 3. Launch the plugin by going to Plugins/MetroloJ/Generate field illumination report
 4. In case the image has not been spatially calibrated, a message error pops up: click on Ok. In the calibration dialog box provide the appropriate values, then re-launch the plugin.
 5. The plugin's interface should appear (see fig. [\[fig:gfir-interf\]](#fig:gfir-interf){reference-type="ref" reference="fig:gfir-interf"});
-   ![image](img/gfir-interf.jpg)
+![image](img/gfir-interf.jpg)
 6. Choose the microscope's type, enter the emission wavelength, the numerical aperture of the objective and the pinhole aperture. Sample
 informations and some comments might also be provided using the appropriate boxes. Ticking the "Save image/plots/data" will generate:
 	* a jpeg image of the illumination pattern;
@@ -117,7 +118,7 @@ informations and some comments might also be provided using the appropriate boxe
 
 ## What's on the report ?
 The field illumination report is composed of two pages (see an example of report on fig. [\[fig:gfir-report\]](#fig:gfir-report){reference-type="ref" reference="fig:gfir-report"}) based on the informations provided by the user. It is composed of up to 6 sections:
-   ![image](img/gfir-report.jpg)
+![image](img/gfir-report.jpg)
    
 * ***Normalized intensity profile***: normalized view of the field illumination, in false color, separated into iso-intensity zones which
 step width is user defined.
@@ -177,7 +178,8 @@ this kind of preparation doesn't always match with the real *in situ* resolution
 in everyday acquisitions.
 
 ### How to acquire the image ?
-The following chart (see fig. [\[fig:gpr-flowImg\]](#fig:gpr-flowImg){reference-type="ref" reference="fig:gpr-flowImg"}) summarises the procedure for optimal image acquisition, in order to determine the resolutions on a confocal microscope.
+[The following chart](#gpr-flowImg) summarises the procedure for optimal image acquisition, in order to determine the resolutions on a confocal microscope.
+![gpr-flowImg](img/gpr-flowImg.jpg)
 
 ## What does it do ?
 1. The plugin will generate a maximum intensity projection of the stack along the z axis. The (x, y) coordinates of the maximum intensity pixel (MIPix) are then collected. A XZ cross-section is generated, along a line passing through the previously determined 2D MIPix. From this image, the z coordinate of the MIPix is defined.
@@ -265,7 +267,8 @@ None...yet.
 4. Mount the coverslip on the slide/mirror by using the mounting medium (or immersion oil). Remove excess of solution by pressing firmly on the coverslip. In case of non setting media, the coverslip should be sealed onto the slide or the mirror (depending on its thickness) using nail polish.
 
 ### How to acquire the image ?
-The following chart (see fig. [\[fig:garr-flowImg\]](#fig:garr-flowImg){reference-type="ref" reference="fig:garr-flowImg"}) summarises the procedure for optimal image acquisition, in order to determine the axial resolution on a confocal microscope.
+[The following chart](#garr-flowImg)  summarises the procedure for optimal image acquisition, in order to determine the axial resolution on a confocal microscope.
+![garr-flowImg](img/garr-flowImg.jpg)
 
 ## What does it do ?
 1. After the user has defined a rectangular ROI, the plugin will generate an average intensity projection of the image along the y axis.
@@ -356,7 +359,8 @@ leave to coat for 15-30 minutes. The solution hardly covers the full surface, so
 NB: Other methods exists in order to produce beads slides, involving dilution in ethanol and leaving the suspension to evaporate. In this case, tests of higher beads dilution might be required. Please note that already prepared beads slides are commercially available (see [FocalCheck Fluorescent Microspheres Size Kit mounted on slide, Ref. F-24633 (6$\mu$m beads) and Ref. F-24634 (15$\mu$m beads)](http:// probes.invitrogen.com/media/pis/mp07234.pdf)). However, this kind of preparation doesn't always match with the real *in situ* resolution as the mounting medium might be different from the one used in everyday acquisitions.
 
 ### How to acquire the image ?
-The following chart (see fig. [\[fig:gcoar-flowImg\]](#fig:gcoar-flowImg){reference-type="ref" reference="fig:gcoar-flowImg"}) summarises the procedure for optimal image acquisition, in order to determine the co-alignement quality on a confocal microscope.
+[The following chart](#gcoar-flowImg) summarises the procedure for optimal image acquisition, in order to determine the co-alignement quality on a confocal microscope.
+![gcoar-flowImg](img/gcoar-flowImg.jpg)
 
 
 ## What does it do ?
@@ -371,7 +375,7 @@ $$dist_{A-B}=\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2+(z_{B}-z_{A})^2}
 
 6. For each couple of coordinates, a reference distance $r_{ref}$ is calculated. This distance is quite easy to determine in 2D as it corresponds to the xy resolution: while considering the centre of the structure on image A, a structure of image B will be co-localized if it is present within a circle traced around centre A of a radius equal to the xy resolution. Due to the disparate resolutions over the three dimensions, this distance is not so easy to calculate in 3D. However, the answer might come from the observation of the factor limiting the resolution: the PSF (Point Spread Function) and more precisely the first Airy disc which might be approximated in 3D as having an ovoid shape (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist){reference-type="ref" reference="fig:gcoar-dist"}).
 
-   ![image](img/gcoar-dist.jpg)
+![image](img/gcoar-dist.jpg)
    
 Therefore in 3D, the reference distance is calculated by considering a reference point and fitting a 3D ellipse around it for which the two characteristic radii correspond to x/y and z resolutions. In this matter changing from Cartesian coordinates to Polar coordinates make it more easy to calculate the reference distance. The two characteristic angles, the azimuth $\Phi$ and the zenith $\Theta$ (see expressions [\[eqn:gcoar-phi\]](#eqn:gcoar-phi){reference-type="ref" reference="eqn:gcoar-phi"} and [\[eqn:gcoar-theta\]](#eqn:gcoar-theta){reference-type="ref" reference="eqn:gcoar-theta"}) are first calculated, based on the coordinates of the two centres to analyse. Knowing this orientation, as well as the x, y and z resolutions ($res^\circ_{x}$, $res^\circ_{y}$ and $res^\circ_{z}$ respectively), the distance from the reference centre to the border of the ovoid shape **$r_{ref}$** is calculated (see expression [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist){reference-type="ref" reference="eqn:gcoar-refDist"}). The inter-centre distance **$r$** is then compared to this reference distance to assess if co-localization occurs (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist){reference-type="ref" reference="fig:gcoar-dist"}C) or not (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist){reference-type="ref" reference="fig:gcoar-dist"}B).
 
