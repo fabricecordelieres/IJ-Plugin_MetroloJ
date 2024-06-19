@@ -201,8 +201,8 @@ $$\begin{aligned}
 2. Open a stack containing exactly one bead.
 3. Launch the plugin by going to Plugins/MetroloJ/Generate PSF report.
 4. In case the stack has not been spatially calibrated, a message error pops up: click on Ok. In the calibration dialog box provide the appropriate values, then re-launch the plugin.
-5. The plugin's interface should appear (see fig. [\[fig:gpr-interf\]](#fig:gpr-interf){reference-type="ref" reference="fig:gpr-interf"});
-   ![image](img/gpr-interf.jpg)
+5. The plugin's interface should appear:
+![gpr-interf](img/gpr-interf.jpg)
 6. Choose the microscope's type, enter the emission wavelength, the numerical aperture of the objective and the pinhole aperture. Sample informations and some comments might also be provided using the appropriate boxes. Ticking the "Save image/plots/data" will generate:
 	* a jpeg image of the side-views;
 	* three files containing tabulation separated values of the x, y and z profiles (excel files);
@@ -211,10 +211,8 @@ $$\begin{aligned}
 8. The pdf report is generated, and appropriate files saved.
 
 ## What's on the report ?
-The PSF report is composed of two to three pages (see an example of report on fig. [\[fig:gpr-report\]](#fig:gpr-report){reference-type="ref"
-reference="fig:gpr-report"}) depending on the informations provided by the user. It is composed of up to 8 sections:
-   ![image](img/gpr-report.jpg){width="\\linewidth"}
-
+The PSF report is composed of two to three pages depending on the informations provided by the user. It is composed of up to 8 sections:
+![gpr-report](img/gpr-report.jpg)
 * ***Profile view***: image composed of three maximum intensity projections, XY, XZ and YZ;
 * ***Microscope infos***: summarizes informations about the acquisition system and the image's calibration;
 * ***Resolution table***: carries both the resolutions determined by fitting and the theoretical, calculated ones;
@@ -256,7 +254,7 @@ None...yet.
 4. Mount the coverslip on the slide/mirror by using the mounting medium (or immersion oil). Remove excess of solution by pressing firmly on the coverslip. In case of non setting media, the coverslip should be sealed onto the slide or the mirror (depending on its thickness) using nail polish.
 
 ### How to acquire the image ?
-[The following chart](#garr-flowImg)  summarises the procedure for optimal image acquisition, in order to determine the axial resolution on a confocal microscope.
+[The following chart](#garr-flowImg) summarises the procedure for optimal image acquisition, in order to determine the axial resolution on a confocal microscope.
 ![garr-flowImg](img/garr-flowImg.jpg)
 
 ## What does it do ?
@@ -277,8 +275,8 @@ $$FWHM=2d\sqrt{2ln(2)} \label{eqn:garr-FWHM}$$
 2. Open the image of the z profile.
 3. Launch the plugin by going to Plugins/MetroloJ/Generate axial resolution report.
 4. In case the image has not been spatially calibrated, a message error pops up: click on Ok. In the calibration dialog box provide the appropriate values, then re-launch the plugin.
-5. The plugin's interface should appear (see fig. [\[fig:garr-interf\]](#fig:garr-interf){reference-type="ref" reference="fig:garr-interf"});
-   ![image](img/garr-interf.jpg)
+5. The plugin's interface should appear:
+![garr-interf](img/garr-interf.jpg)
 6. Select the position of the ROI and adjust its width.
 7. Choose the microscope's type, enter the emission wavelength, the numerical aperture of the objective and the pinhole aperture. Sample
 informations and some comments might also be provided using the appropriate boxes. Ticking the "Save image/plots/data" will generate:
@@ -289,10 +287,8 @@ informations and some comments might also be provided using the appropriate boxe
 9. The pdf report is generated, and appropriate files saved.
 
 ## What's on the report ?
-The axial resolution report is composed of two pages (see an example of report on fig. [\[fig:garr-report\]](#fig:garr-report){reference-type="ref" reference="fig:garr-report"}). It is composed of up to 6 sections:
-	
-	![image](img/garr-report.jpg)
-   
+The axial resolution report is composed of two pages. It is composed of up to 6 sections:
+![garr-report](img/garr-report.jpg)
 * ***Profile view***: a calibrated image of the profile, including the ROI's outlines;
 * ***Microscope infos***: summarizes informations about the acquisition system and the image's calibration;
 * ***Resolution table***: carries both the ROI's position, as well as axial resolutions (experimental and theoretical);
@@ -351,7 +347,6 @@ NB: Other methods exists in order to produce beads slides, involving dilution in
 [The following chart](#gcoar-flowImg) summarises the procedure for optimal image acquisition, in order to determine the co-alignement quality on a confocal microscope.
 ![gcoar-flowImg](img/gcoar-flowImg.jpg)
 
-
 ## What does it do ?
 1. The plugin will generate two summed intensity projection of the stack along the y and z axes;
 2. On each projection, histogram segmentation is done on the log of intensities, aiming at separating two populations of intensities (background and signal);
@@ -362,11 +357,10 @@ NB: Other methods exists in order to produce beads slides, involving dilution in
 $$dist_{A-B}=\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2+(z_{B}-z_{A})^2}
         \label{eqn:gcoar-dist}$$
 
-6. For each couple of coordinates, a reference distance $r_{ref}$ is calculated. This distance is quite easy to determine in 2D as it corresponds to the xy resolution: while considering the centre of the structure on image A, a structure of image B will be co-localized if it is present within a circle traced around centre A of a radius equal to the xy resolution. Due to the disparate resolutions over the three dimensions, this distance is not so easy to calculate in 3D. However, the answer might come from the observation of the factor limiting the resolution: the PSF (Point Spread Function) and more precisely the first Airy disc which might be approximated in 3D as having an ovoid shape (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist){reference-type="ref" reference="fig:gcoar-dist"}).
-
-![image](img/gcoar-dist.jpg)
+6. For each couple of coordinates, a reference distance $r_{ref}$ is calculated. This distance is quite easy to determine in 2D as it corresponds to the xy resolution: while considering the centre of the structure on image A, a structure of image B will be co-localized if it is present within a circle traced around centre A of a radius equal to the xy resolution. Due to the disparate resolutions over the three dimensions, this distance is not so easy to calculate in 3D. However, the answer might come from the observation of the factor limiting the resolution: the PSF (Point Spread Function) and more precisely the first Airy disc which might be approximated in 3D as having an ovoid shape:
+![gcoar-dist](img/gcoar-dist.jpg)
    
-Therefore in 3D, the reference distance is calculated by considering a reference point and fitting a 3D ellipse around it for which the two characteristic radii correspond to x/y and z resolutions. In this matter changing from Cartesian coordinates to Polar coordinates make it more easy to calculate the reference distance. The two characteristic angles, the azimuth $\Phi$ and the zenith $\Theta$ (see expressions [\[eqn:gcoar-phi\]](#eqn:gcoar-phi){reference-type="ref" reference="eqn:gcoar-phi"} and [\[eqn:gcoar-theta\]](#eqn:gcoar-theta){reference-type="ref" reference="eqn:gcoar-theta"}) are first calculated, based on the coordinates of the two centres to analyse. Knowing this orientation, as well as the x, y and z resolutions ($res^\circ_{x}$, $res^\circ_{y}$ and $res^\circ_{z}$ respectively), the distance from the reference centre to the border of the ovoid shape **$r_{ref}$** is calculated (see expression [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist){reference-type="ref" reference="eqn:gcoar-refDist"}). The inter-centre distance **$r$** is then compared to this reference distance to assess if co-localization occurs (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist){reference-type="ref" reference="fig:gcoar-dist"}C) or not (see fig. [\[fig:gcoar-dist\]](#fig:gcoar-dist){reference-type="ref" reference="fig:gcoar-dist"}B).
+Therefore in 3D, the reference distance is calculated by considering a reference point and fitting a 3D ellipse around it for which the two characteristic radii correspond to x/y and z resolutions. In this matter changing from Cartesian coordinates to Polar coordinates make it more easy to calculate the reference distance. The two characteristic angles, the azimuth $\Phi$ and the zenith $\Theta$ (see expressions [\[eqn:gcoar-phi\]](#eqn:gcoar-phi){reference-type="ref" reference="eqn:gcoar-phi"} and [\[eqn:gcoar-theta\]](#eqn:gcoar-theta){reference-type="ref" reference="eqn:gcoar-theta"}) are first calculated, based on the coordinates of the two centres to analyse. Knowing this orientation, as well as the x, y and z resolutions ($res^\circ_{x}$, $res^\circ_{y}$ and $res^\circ_{z}$ respectively), the distance from the reference centre to the border of the ovoid shape **$r_{ref}$** is calculated (see expression [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist){reference-type="ref" reference="eqn:gcoar-refDist"}). The inter-centre distance **$r$** is then compared to this reference distance to assess if co-localization occurs (see previous figure, section C) or not (see previous figure, section B).
 
 $$\begin{aligned}
         \Phi=\arccos\frac{x_{B}-x_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2}}\label{eqn:gcoar-phi}\\
@@ -379,10 +373,8 @@ $$\begin{aligned}
 1. Start ImageJ.
 2. Open two or three stacks containing exactly one bead.
 3. Launch the plugin by going to Plugins/MetroloJ/Generate co-alignement report.
-4. The plugin's interface should appear (see fig. [\[fig:gcoar-interf\]](#fig:gcoar-interf){reference-type="ref" reference="fig:gcoar-interf"}).
-
-   ![image](img/gcoar-interf.jpg)
-   
+4. The plugin's interface should appear:
+![gcoar-interf](img/gcoar-interf.jpg) 
 5. Enter a title for the report, choose which stack should be used for analysis (under "Stack 3", "none" might also be used), the microscope's type, enter the emission wavelength for each stack, the numerical aperture of the objective and the pinhole aperture. Sample informations and some comments might also be provided using the appropriate boxes. Ticking the "Save image/plots/data" will generate:
 	* a jpeg image of the side-views;
 	* a file containing tabulation separated values of all the numerical data from the report.
@@ -391,10 +383,8 @@ $$\begin{aligned}
 8. The pdf report is generated, and appropriate files saved.
 
 ## What's on the report ?
-The co-alignement report is composed of two to three pages (see an example of report on fig. [\[fig:gcoar-report\]](#fig:gcoar-report){reference-type="ref" reference="fig:gcoar-report"}) depending on the informations provided by the user. It is composed of up to 7 sections:
-
-   ![image](img/gcoar-report.jpg)
-
+The co-alignement report is composed of two to three pages depending on the informations provided by the user. It is composed of up to 7 sections:
+![gcoar-report](img/gcoar-report.jpg)
 * ***Profile view***: image composed of three maximum intensity projections, XY, XZ and YZ;
 * ***Microscope infos***: summarizes informations about the acquisition system and the image's calibration;
 * ***Pixel shift table***: considering as a reference the channel stated at the beginning of each row, each column show how much pixels separate one channel from the reference along x, y and z axis. This information might be useful to compensate for chromatic aberration using image processing softwares. On each row, resolutions and centre's coordinates are given for the reference channel;
