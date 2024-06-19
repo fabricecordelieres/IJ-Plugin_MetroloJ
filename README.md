@@ -229,7 +229,7 @@ The PSF report is composed of two to three pages depending on the informations p
 	* sum of residuals squared: sum of the differences between the original intensity values and the fitted ones, squared;
 	* standard deviation: standard deviation of the residuals;
 	* the correlation coefficient $R^{2}$ (gives indication on the fitting goodness);
-	* the Gaussian's constants a to d (see [\[eqn:gpr-gaussian\]](#eqn:gpr-gaussian){reference-type="ref" reference="eqn:gpr-gaussian"}), c being the position of the beads centre along the x axis.
+	* the Gaussian's constants a to d, c being the position of the beads centre along the x axis.
 * ***y profile and fitting parameters***: same as previous along y axis;
 * ***z profile and fitting parameters***: same as previous along z axis;
 * ***Sample infos (optional)***: contains the informations entered by the user in the "Sample infos" section of the interface;
@@ -314,7 +314,7 @@ The axial resolution report is composed of two pages. It is composed of up to 6 
 	* sum of residuals squared: sum of the differences between the original intensity values and the fitted ones, squared;
 	* standard deviation: standard deviation of the residuals;
 	* the correlation coefficient $R^{2}$ (gives indication on the fitting goodness).
-	* the Gaussian's constants a to d (see [\[eqn:gpr-gaussian\]](#eqn:gpr-gaussian){reference-type="ref" reference="eqn:gpr-gaussian"}), c being the position of the beads centre along the x axis;
+	* the Gaussian's constants a to d, c being the position of the beads centre along the x axis;
 * ***Sample infos (optional)***: contains the informations entered by the user in the "Sample infos" section of the interface;
 * ***Comments (optional)***: contains the informations entered by the user in the "Comments" section of the interface;
 
@@ -377,7 +377,7 @@ $$dist_{A-B}=\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2+(z_{B}-z_{A})^2}$$
 
 <p align="center"><img src="img/gcoar-dist.jpg" width="512"></p>
    
-Therefore in 3D, the reference distance is calculated by considering a reference point and fitting a 3D ellipse around it for which the two characteristic radii correspond to x/y and z resolutions. In this matter changing from Cartesian coordinates to Polar coordinates make it more easy to calculate the reference distance. The two characteristic angles, the azimuth $\Phi$ and the zenith $\Theta$ (see expressions [\[eqn:gcoar-phi\]](#eqn:gcoar-phi){reference-type="ref" reference="eqn:gcoar-phi"} and [\[eqn:gcoar-theta\]](#eqn:gcoar-theta){reference-type="ref" reference="eqn:gcoar-theta"}) are first calculated, based on the coordinates of the two centres to analyse. Knowing this orientation, as well as the x, y and z resolutions ($res^\circ_{x}$, $res^\circ_{y}$ and $res^\circ_{z}$ respectively), the distance from the reference centre to the border of the ovoid shape **$r_{ref}$** is calculated (see expression [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist){reference-type="ref" reference="eqn:gcoar-refDist"}). The inter-centre distance **$r$** is then compared to this reference distance to assess if co-localization occurs (see previous figure, section C) or not (see previous figure, section B).
+Therefore in 3D, the reference distance is calculated by considering a reference point and fitting a 3D ellipse around it for which the two characteristic radii correspond to x/y and z resolutions. In this matter changing from Cartesian coordinates to Polar coordinates make it more easy to calculate the reference distance. The two characteristic angles, the azimuth $\Phi$ and the zenith $\Theta$ and are first calculated, based on the coordinates of the two centres to analyse. Knowing this orientation, as well as the x, y and z resolutions ($res^\circ_{x}$, $res^\circ_{y}$ and $res^\circ_{z}$ respectively), the distance from the reference centre to the border of the ovoid shape **$r_{ref}$** is calculated. The inter-centre distance **$r$** is then compared to this reference distance to assess if co-localization occurs (see previous figure, section C) or not (see previous figure, section B).
 
 $$\begin{aligned}
         \Phi=\arccos\frac{x_{B}-x_{A}}{\sqrt{(x_{B}-x_{A})^2+(y_{B}-y_{A})^2}}\\
@@ -409,7 +409,7 @@ The co-alignement report is composed of two to three pages depending on the info
 * ***Microscope infos***: summarizes informations about the acquisition system and the image's calibration;
 * ***Pixel shift table***: considering as a reference the channel stated at the beginning of each row, each column show how much pixels separate one channel from the reference along x, y and z axis. This information might be useful to compensate for chromatic aberration using image processing softwares. On each row, resolutions and centre's coordinates are given for the reference channel;
 * ***Distance table (uncalibrated)***: contains distances calculated between two channels, while not taking into account the actual images's calibration;
-* ***Distance table (calibrated)***: contains distances calculated between two channels, while taking into account the actual images's calibration. The distance printed between bracket is the reference distance (see [6.2](#sec:gcoar-what){reference-type="ref" reference="sec:gcoar-what"} and [\[eqn:gcoar-refDist\]](#eqn:gcoar-refDist){reference-type="ref" reference="eqn:gcoar-refDist"});
+* ***Distance table (calibrated)***: contains distances calculated between two channels, while taking into account the actual images's calibration. The distance printed between bracket is the reference distance;
 * ***Sample infos (optional)***: contains the informations entered by the user in the "Sample infos" section of the interface;
 * ***Comments (optional)***: contains the informations entered by the user in the "Comments" section of the interface;
 
