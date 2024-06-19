@@ -4,8 +4,8 @@
 The authors would like to thank:
 Aurélie Le Ru for reporting the time-shift bug.
 François Waharte for beta-testing and bug tracking.
-Claude-Marie Bachelet and Aurélien Dauphin for the images used in fig. ["Co-alignement report"](#gcoar-report)
-Aude Jobart for images of spinning disc PSFs*
+Claude-Marie Bachelet and Aurélien Dauphin for the images used in fig. "Co-alignement report".
+Aude Jobart for images of spinning disc PSFs.*
 
 *We would like to acknowledge the work of all the valuable beta-tester
 and the member of the "groupe de travail Métrologie du RT-MFM" who made
