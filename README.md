@@ -42,7 +42,8 @@ A ***MetroloJ*** entry should appear under the ImageJ's plugins menu. It contain
 report" section ([6.1.1.1](#sec:gcoar-proto-what){reference-type="ref" reference="sec:gcoar-proto-what"}).
 
 ### How to acquire the image ?
-The following chart (see fig. [\[fig:gcvr-flowImg\]](#fig:gcvr-flowImg){reference-type="ref" reference="fig:gcvr-flowImg"}) summarizes the procedure for optimal image acquisition, in order to determine the CV of several PMTs on a confocal microscope.
+The following chart ([this flow chart](#gcvr-flowImg) summarizes the procedure for optimal image acquisition, in order to determine the CV of several PMTs on a confocal microscope.
+![gcvr-flowImg](img/gcvr-flowImg.jpg)
 
 ## What does it do ?
 1. The plugin measures the average intensity ($\mu$) and the standard deviation ($\sigma$) of the gray levels within a user defined region of interest (ROI) for each image of a stack corresponding to acquisitions made for each PMT to compare.
