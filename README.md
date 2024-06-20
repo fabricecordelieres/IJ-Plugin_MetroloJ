@@ -15,7 +15,7 @@ Several documents are available to download. Their source code ($\LaTeX$) is ava
 * [JACoP conference paper (ImageJ conference, nov 2008)](docs/JACoP_v2_0__improving_the_user_experience_with_co_localization_studies.pdf), explaining how the reference distance is calculated in 3D
 * **[Presentation by John Oreopoulos and Chris Morrison](docs/ANDOR_Review_CoReg_John_Oreopoulos.pdf) pointing at the issue about the $r_{ref}$ definition**
 * **[JACoP conference paper (ImageJ conference, nov 2008), updated in June 2024 with the proper reference distance formula](docs/JACoP_v2_0__improving_the_user_experience_with_co_localization_studies__Edit_2024_.pdf)**
-* [PDF version of the manual](docs/MetroloJ_Manual_v2.pdf)
+* [PDF version of the manual](docs/MetroloJ_Manual_v3.pdf)
 
 ---
 ---
