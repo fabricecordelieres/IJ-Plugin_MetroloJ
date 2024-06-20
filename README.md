@@ -36,16 +36,16 @@ Pierre Bourdoncle, Anne Cantereau, Julien Cau, Christophe Chamot, Julien Cianfic
 ---
 
 # How to install the plugin ?
-First, close ImageJ in case the software is already running. Copy and paste the ***MetroloJ.jar*** file into the ImageJ/Plugins folder.
-Download the ***iText library*** by following [this link](http://prdownloads.sourceforge.net/itext/iText-2.1.5.jar). This library will be used by the plugin to generate pdf reports. Copy and paste it into the ImageJ/Plugins folder. Restart ImageJ.
-A ***MetroloJ*** entry should appear under the ImageJ's plugins menu. It contains 5 entries:
-
-* Generate CV report
-* Generate field illumination report
-* Generate PSF report
-* Generate axial resolution report
-* Generate co-alignement report.
-
+1. Download the [MetroloJ_pack.zip](https://github.com/fabricecordelieres/IJ-Plugin_MetroloJ/releases/download/v1.1/MetroloJ_pack.zip) file from the [Releases section](https://github.com/fabricecordelieres/IJ-Plugin_MetroloJ/releases).
+2. Unzip the file.
+3. Drag-and-drop the two files onto the ImageJ toolbar. When asked where to save the MetroloJ_.jar file, simply press Ok (you're already pointed at the ImageJ/Plugins folder).
+4. Restart ImageJ/Fiji.
+5. A MetroloJ entry should appear under the ImageJ's plugins menu. It contains 5 entries:
+    -   Generate CV report
+    -   Generate field illumination report
+    -   Generate PSF report
+    -   Generate axial resolution report
+    -   Generate co-alignement report.
 ---
 
 # Generate CV report
