@@ -1,7 +1,7 @@
 <h1 align="center">MetroloJ plugin: WARNING</h1>
-A bug has been found in the way the reference distance was computed for co-alignement analysis (original version of the plugin, circa 2008). The bug is now corrected (version 1.1, June 2024).
+A bug has been found in the way the reference distance was computed for co-alignement analysis (original version of the plugin, v1.0, circa 2008). The bug is now corrected (version 1.1, June 2024).
 
-This repository contains the explanations together with a new version of the plugin including the correct way to do the calculations.
+This repository contains the explanations together with the old and a new version of the plugin including the correct way to do the calculations.
 
 ---
 ---
