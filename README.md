@@ -50,6 +50,9 @@ Pierre Bourdoncle, Anne Cantereau, Julien Cau, Christophe Chamot, Julien Cianfic
     -   Generate PSF report
     -   Generate axial resolution report
     -   Generate co-alignement report.
+  
+NB: MetroloJ heavily relies on the iText library to generate pdf files. The library has evolved but only versions 2.1.x works with MetroloJ. You'll find version 2.1.5 enclosed in the [MetroloJ_pack.zip file](https://github.com/fabricecordelieres/IJ-Plugin_MetroloJ/releases/download/v1.1/MetroloJ_pack.zip).
+
 ---
 
 # Generate CV report
