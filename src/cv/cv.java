@@ -265,7 +265,7 @@ public class cv implements Measurements{
         
         for (int i=0; i<x.length; i++){
             x[i]=i;
-            y[i]=histograms.elementAt(0)[i];
+            if(i<histograms.elementAt(0).length) y[i]=histograms.elementAt(0)[i];
         }
         
         Plot plot=new Plot("Histograms", "Gray levels", "Nb of pixels");
@@ -280,9 +280,10 @@ public class cv implements Measurements{
         
         if (nImg>1){
             for (int i=1; i<nImg; i++){
-                for (int j=0; j<x.length; j++) y[j]=histograms.elementAt(i)[j];
+                for (int j=0; j<x.length; j++) if(j<histograms.elementAt(i).length) y[j]=histograms.elementAt(i)[j];
                 plot.setColor(imageTricks.COLORS[colorIndex]);
-                plot.addPoints(x, y, Plot.LINE);
+                plot.add("line", x, y);
+                //plot.addPoints(x, y, Plot.LINE);
                 label+=imageTricks.COLOR_NAMES[colorIndex++]+": "+names[i]+"\n";
                 if (colorIndex>=imageTricks.COLORS.length) colorIndex=0;
             }
