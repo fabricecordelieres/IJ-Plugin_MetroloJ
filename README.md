@@ -6,6 +6,9 @@ This repository contains the explanations together with the old and a new versio
 ---
 ---
 
+This repository is the home of the original MetroloJ plugin. It has been forked and further augmented to give the MetroloJ-QC plugin.
+Have a look at [its repo](https://github.com/MontpellierRessourcesImagerie/MetroloJ_QC) and the accompanying publication
+
 <h1 align="center">MetroloJ plugin: supporting documents</h1>
 
 Several documents are available to download. Their source code ($\LaTeX$) is available for the [docs/src/ folder](docs/src).
