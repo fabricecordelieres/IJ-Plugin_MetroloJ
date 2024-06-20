@@ -105,21 +105,21 @@ public class PSFprofilerReport {
             report.newPage();
 
             report.add(rs.title("X profile & fitting parameters:"));
-            Image image=rs.imagePlus(pp.getXplot().getImagePlus(), 100);
+            Image image=rs.imagePlus(pp.getXplot().getImagePlus(), 85);
             image.setAlignment(Image.ALIGN_LEFT | Image.TEXTWRAP);
             report.add(image);
             report.add(rs.paragraph(pp.getXParams()));
             report.add(rs.paragraph("\n"));
 
             report.add(rs.title("Y profile & fitting parameters:"));
-            image=rs.imagePlus(pp.getYplot().getImagePlus(), 100);
+            image=rs.imagePlus(pp.getYplot().getImagePlus(), 85);
             image.setAlignment(Image.ALIGN_LEFT | Image.TEXTWRAP);
             report.add(image);
             report.add(rs.paragraph(pp.getYParams()));
             report.add(rs.paragraph("\n"));
 
             report.add(rs.title("Z profile & fitting parameters:"));
-            image=rs.imagePlus(pp.getZplot().getImagePlus(), 100);
+            image=rs.imagePlus(pp.getZplot().getImagePlus(), 85);
             image.setAlignment(Image.ALIGN_LEFT | Image.TEXTWRAP);
             report.add(image);
             report.add(rs.paragraph(pp.getZParams()));
