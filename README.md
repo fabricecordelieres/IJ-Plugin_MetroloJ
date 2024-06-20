@@ -10,7 +10,8 @@ This repository contains the explanations together with the old and a new versio
 
 This repository is the home of the original MetroloJ plugin. It has been forked and further augmented to give the MetroloJ-QC plugin.
 Have a look at [its repo](https://github.com/MontpellierRessourcesImagerie/MetroloJ_QC) and the [accompanying publication](https://doi.org/10.1083/jcb.202107093)
-[Orestis Faklaris, Leslie Bancel-Vallée, Aurélien Dauphin, Baptiste Monterroso, Perrine Frère, David Geny, Tudor Manoliu, Sylvain de Rossi, Fabrice P. Cordelières, Damien Schapman, Roland Nitschke, Julien Cau, Thomas Guilbert; Quality assessment in light microscopy for routine use through simple tools and robust metrics. J Cell Biol 7 November 2022; 221 (11): e202107093. doi: https://doi.org/10.1083/jcb.202107093](docs/2022_MetroloJ-QC_jcb_202107093.pdf)
+
+[Orestis Faklaris, Leslie Bancel-Vallée, Aurélien Dauphin, Baptiste Monterroso, Perrine Frère, David Geny, Tudor Manoliu, Sylvain de Rossi, Fabrice P. Cordelières, Damien Schapman, Roland Nitschke, Julien Cau, Thomas Guilbert; Quality assessment in light microscopy for routine use through simple tools and robust metrics. J Cell Biol 7 November 2022; 221 (11): e202107093](docs/2022_MetroloJ-QC_jcb_202107093.pdf)
 
 ---
 ---
