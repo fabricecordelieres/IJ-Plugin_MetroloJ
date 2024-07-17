@@ -391,11 +391,11 @@ public class coAlignement {
          *pixel: it will be used as the reference distance...
         */
 
-        double xRef=micro.resolution[1]*micro.resolution[2]*Math.cos(phi)*Math.sin(theta);
-        double yRef=micro.resolution[0]*micro.resolution[2]*Math.sin(phi)*Math.cos(theta);
-        double zRef=micro.resolution[0]*micro.resolution[1]*Math.cos(theta);
+        double xRef=micro.resolution[0]*Math.sin(theta)*Math.cos(phi);
+        double yRef=micro.resolution[1]*Math.sin(theta)*Math.sin(phi);
+        double zRef=micro.resolution[2]*Math.cos(theta);
 
-        return (micro.resolution[0]*micro.resolution[1]*micro.resolution[2])/Math.sqrt(xRef*xRef+yRef*yRef+zRef*zRef);
+        return (xRef*yRef*zRef)/Math.sqrt(xRef*xRef+yRef*yRef+zRef*zRef);
     }
     
     private double round(double nb2round, int nbOfDigits){
